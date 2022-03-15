@@ -5,6 +5,7 @@
     --cor1: #224242;
     --cor2: #044B4C;
     --cor3: #498E8F;
+    --cor4: #6eb3b4;
 
     --padrao: Arial, Helvetica, sans-serif;
     --titulos:'Merienda', cursive;
@@ -21,25 +22,28 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    background-image: linear-gradient(to bottom,rgb(59, 112, 112), var(--cor2), var(--cor1));
-    box-shadow: 2px 2px 6px var(--cor);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
     text-align: center;
+    padding: 5px 5px;
     padding-top: 35px;
 }
 nav {
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     text-align: center;
-    padding: 10px 20px 20px;
+    font-weight: bold;
+    padding: 10px 20px 10px;
 }
 nav > a {
     color: white;
+    text-shadow: 2px 2px 6px var(--cor1);
+    text-decoration: none;
     border-radius: 5px;
     padding: 10px;
     transition-duration: 0.5s;
 }
 nav > a:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--cor1);
+    border-radius: 5px
 }
 main {
     background-color: white;
@@ -58,16 +62,11 @@ section {
 }
 h1#principal {
     font-family: var(--titulos);
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 10px;
     font-size: 2.7em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
     transition-duration: 0.7s;
-}
-#principal:hover {
-    background-color: white;
-    color: var(--cor1);
-    border-radius: 5px;
 }
 h1 {
     font-family: var(--titulos);
@@ -106,12 +105,12 @@ pre {
     background-color: var(--cor3);
     color: rgb(255, 255, 255);
     padding: 10px;
-    margin: 15px -16px 15   px -16px;
-    font-size: 9px;
+    margin: 15px -16px 15px -16px;
+    font-size: 14px;
     transition-duration: 0.5s;
 }
 pre:hover {
-    background-color: #122424;
+    background-color: var(--cor1);
     color: white;
 
 }
