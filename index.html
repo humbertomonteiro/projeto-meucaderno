@@ -1,0 +1,573 @@
+
+    <!DOCTYPE html>
+    <html láng="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <title>Aprendendo HTML e CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="principal">Meu Caderno HTML</h1>
+        </header>
+        <nav>
+            <a href="index.html">Página inicial</a>
+            <a href="maispg/menu.html">Menu</a>
+            <a href="maispg/sobre.html">Sobre</a>
+            <a href="maispg/redes.html">Contato</a>
+            <a href="maispg/redes.html">Redes sociais</a>
+        </nav>
+        <main>
+            <section>
+                <h1>Primeiros passos:</h1><hr>
+                <h2>Algumas formatações:</h2>
+                <h3>Títulos, paragrafos e algumas dicas:</h3>
+                <p>A tag <strong>&lt;h1&gt;</strong> é um título de grau 1, existem 6 niveis de títulos. Niveis de títulos tem
+                    sua importância, não  se usa como forma de tamanho de texto, pois isso é feito no <strong>'CSS'</strong>
+                    onde vamos fazer o design do site.  Então você não vai usar a tag <strong>&lt;h3&gt;</strong> porque
+                    acha que o tamanho é melhor. São niveis para serem usados  como títulos e subtítulos e na hora de trabalhar
+                    com seu arquivo, ser bem mais pratico e profissional.</p>
+                <p>A tag <strong>&lt;p&gt;</strong> cria um paragrafo.(São os paragrafos que você está lendo) Você pode
+                    escrever o paragrafo de qualquer jeito, basta  colocar no meio do par de tags <strong>&lt;p&gt;
+                    &lt;/p&gt;</strong>. </p>
+                <p>Se precisar querbrar o texto em algum lugar específico, você pode usar a tag &lt;br&gt;.</p>
+                <p>Para colocar o sinal de maior (&lt;) ou menor (&gt;) no HTML, basta colocar assim <strong>'& l t ;'</strong> (Tudo junto)
+                    para  o maior e<strong>'& g t ;'</strong> (Tudo junto) para menor.</p>
+                <p>A tag <strong>&lt;hr&gt;</strong> cria uma linha horizontal.(Igual a linha acima)</p>
+                <p>A tag <strong>&lt;br&gt;</strong> quebra a linha do texto.(Pois se der enter não vai fazer nenhuma diferença no texto)</p>
+                <h4>Envelopar:</h4>
+                <p>Uma dica para deixar um texto entre tags é usando um atalho. Selecione o texto no seu  <strong>'Visual
+                    Studio Code'</strong>,em seguida no seu teclado aperte <strong>'ctrl' 'shift' 'p'</strong>, aparecerá uma caixa
+                    de pesquisa e lá você  busca <strong>'abb'</strong>. Vão aparecer algumas opções e você irá escolher a opção
+                    <strong>'Wrap with Abbreviation'</strong> em seguida vai buscar<strong> 'p' </strong> e dar enter. Agora toda vez que
+                    precisar colocar algum texto entre tags é só  selecionar o texto, usar esse atalho:<strong>'ctrl' 'shift'
+                    'p'</strong>, dar <strong>'enter'</strong>e escrever a tag desejada e dar <strong>'enter'</strong>   novamente.</p>
+                <h2>Principais formatações de texto:</h2>
+                <h3>Como usar Negrito e Itálico do jeito certo:</h3>
+                <p><strong>Negrito</strong> se usa para dar destaque. Para fazer um texto ficar em negrito
+                    temos a tag &lt;strong&gt;.
+                    ex: <strong>Essa frase está entre tags &lt;strong&gt; &lt;/strong&gt;.</strong></p>
+                <p><em>Itálico</em> se usa para dar ênfase. Para fazer um texto ficar em Itálico tem a
+                    tag &lt;em&gt;.
+                    ex: <em>Essa frase está entre tags &lt;em&gt; &lt;/em&gt;.</em></p>
+                <h3>Texto marcado:</h3>
+                <p>Podemos criar também um texto marcado usando a tag <strong>&lt;mark&gt;</strong>. Aqui vai um exemplo:
+                    <mark>Estou muito animado com minha evolução no HTML5.</mark></p>
+                <p>Essa marcação de texto vai ser na cor amarela. Para mudar usa 'CSS', dentro da tag mark voce vai digitar
+                    style e escolhe o parâmetro background e a cor desejada.  Aqui vai um exemplo:</p>
+                <pre>&lt;mark style= "backgroud-color:lime;"&gt; &lt;/mark&gt;</pre>
+                <p>Mas como é questão de <strong>'style'</strong> a forma mais recomendada de fazer é com <strong>'CSS'</strong>,
+                    pois se precisar   usar a marcação em outro texto vai ser precisó fazer a mesma edição em todos as tags
+                    <strong>&lt;mark&gt;</strong></p>
+                <h3>Texto grande e texto pequeno:</h3>
+                <p>Estamos fazendo um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. Usando a tag
+                    <strong>&lt;big&gt;</strong> para   grande e a tag <strong>&lt;small&gt;</strong> para textos pequenos.</p>
+                <h3>Texto deletado:</h3>
+                <p>Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado.   O texto
+                    vai ficar riscado, usando a tag <strong>&lt;del&gt;</strong>.   <strong>Ex:</strong> <del>Estou escrevendo
+                    tanto que estou até impressionado.</del> </p>
+                <h3>Texto inserido:</h3>
+                <p>Podemos marcar um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois.   O texto
+                    vai ficar sublinhado usando a tag <strong>&lt;ins&gt;</strong>.   <strong>Ex:</strong> <ins>O bom de escrever
+                    tanto é que estou ficando melhor na digitação.</ins></p>
+                <h3>Texto sobrescrito:</h3>
+                <p>Para inserir coisas do tipo x<sup>20</sup>+3. Aqui estamos usando a tag <strong>&lt;sup&gt;</strong>
+                    dessa forma:</p>
+                <pre>x&lt;sup&gt;20&lt;/sup&gt;+3</pre>
+                <h3>Texto subscrito:</h3>
+                <p>Para inserir coisar do tipo H<sub>2</sub>O. Aqui estamos usando a tag <strong>&lt;sub&gt;</strong>
+                    dessa forma:</p>
+                <pre>H&lt;sub&gt;2&lt;/sub&gt; O</pre>
+                <h3>Mais formatações:</h3>
+                <p>Temos a tag <strong>&lt;code&gt;</strong> que deixa o texto com uma formatação mais fácil de se ler. São usadas
+                    geralmente para mostrar códigos de progamação</p>
+                <strong>Ex sem tag: </strong>document.getElementById('teste') <strong>Ex com tag:</strong> <code>document.
+                    getElementById('teste')</code>.
+                <p>Chamamos esse essa fonte de mono espaçal. Mas usando apenas a tag <strong>&lt;code&gt;</strong> não vai dar para
+                    escrever   código com a formatacão correta.  Como exemplo olhe esse código em python:</p>
+                <code>num = int(input('Digite um número:'))
+                    if num % 2 == 0:
+                        print(f'O número {num} é PAR')
+                    else:
+                        pront(f'O número {num} é IMPAR')
+                    print('Fim do programa')</code>
+                <p>No arquivo HTML está todo escrito com a formatação correta, mas quando abre o arquivo no   navegador, ele não
+                    fica com a formatação apenas usando a tag <strong>&lt;code&gt;</strong>, então usamos a tag
+                    <strong>&lt;pre&gt;</strong>  para fazer o navegador abrir da forma que escrevemos no arquivo.
+                    <strong>Ex acima, mas agora entre as tags &lt;pre&gt;:</strong>
+                <pre>
+num = int(input('Digite um número:'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        pront(f'O número {num} é IMPAR')
+    print('Fim do programa')</pre>
+                <p>isso acontende porque a tag <strong>&lt;pre&gt;</strong> usa a pre-formatação do seu arquivo HTML.</p>
+                <h3>Citações da forma correta:</h3>
+                <h4>Citações simples:</h4>
+                <p>Temos a tag <strong>&lt;q&gt;</strong> para colocar uma citação entre aspas, dá para colocar diretamente as aspas
+                    na hora   de escrever,mas o <strong>HTML5</strong> é usado para dar <mark>sentido</mark> ao texto e não
+                    simplesmente uma forma bonita   ou interativa.(isso é papel do CSS e do jávaScript).
+                <p><strong>Ex:</strong> </p>
+                <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+                <h4>Citações completas:</h4>
+                <p>Temos a tag <strong>&lt;blockquote&gt;</strong>, que servem para citaçoes maiores e vai deixar o texto em bloco.
+                <p>Esse tipo de citação pode usar um parêmetro para dizer a fonte da citação dando o devido crédito ao autor.
+                    basta na tag de abertura escrever: <strong>cite="e aqui colocar a url de onde você tirou a citação ou se foi
+                    de um   livro, colocar o link para comprar-lo"</strong></p><strong>Ex:</strong> <blockquote>
+                    A vida é uma tempestade, meu amigo. Um dia você está tomando sól e no dia seguinte o mar   te lánça contra
+                    as rochas. O que faz de você um homem é o que você faz quando a tempestade vem.</blockquote></p>
+                <h3>Abreviações:</h3>
+                <p>Para abreviações temos a tag <strong>&lt;abbr&gt;</strong> quando colocar o mouse em cima da abreviação,
+                    vai mostrar o que   você escrever na tag. Dentro da tag de abertura você vai escrever: <strong>title=
+                    "Aqui vai colocar o significado da  abreviação"</strong></p>
+                <p><strong>Ex:</strong>  Estou aprendendo <abbr title="HyperText Markup lánguage">HTML</abbr> e
+                    <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+                Foi feito assim:</p>
+                <pre>Estou aprendendo&lt;abb title="HyperText Markup lánguage"&gt;HTM&lt;/abbr&gte&lt;abbr title="Cascading
+Style Sheets"&gt;CS&lt;/abbr&gt.Estou adorando!</pre>
+                <h2>Símbolos especiais:</h2><hr>
+                <h3>Como adicionar:</h3>
+                <p>Muito simples, sempre começa com o 'e comercial' (Que é esse símbolo - &)
+                    e no final   usa <strong>' ; '</strong> (Ponto e virgulá). </p>
+                <h3>Símbolos frequentes:</h3>
+                    &reg; - Marca registrada - <strong>'& reg'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &copy; - Copyrigth - <strong>'& copy'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &trade; - Trade Marquue - <strong>'& trade'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &Delta; - Delta - <strong>'& Delta'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &uArr; - Pra cima - <strong>'& uArr'</strong> tudo junto e com <strong>' ; '</strong> no final.  </p>
+                <h3>Moedas:</h3>
+                    <p>&euro; - Euro - <strong>'& euro'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &pound; - Libra - <strong>'& pound'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &yen; - Yen - <strong>'& yen'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                    &cent; - Centavo Americano - <strong>'& cent'</strong> tudo junto e com <strong>' ; '</strong> no final.</p>
+                <p>Mais símbolos no site da <a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/">erikasarti</a>, tem uma 
+                variedade muito grande.</p>
+                <h2>Emoji:</h2> <hr>
+                <h3>Simples e deixa seu site bem interativo</h3>
+                <p>O símbolo do emoji sempre começa com <strong>'& # x'</strong> tudo junto.  (Essa sequência de Símbolos quer
+                    dizer que o valor é em exadecimal)
+                <p>&#x1f596; - O código desse emoji é: <strong>&#x 1f596;</strong> (Tudo junto).
+                    &#x1F913; - O código desse emoji é: <strong>&#x 1f913;</strong> (Tudo junto).</p>
+                <p>Para não ter incompatibilidade com qualquer aparelho ou sistema pode pegar o código no site: 
+                    <a target="_blank" href="https://emojipedia.org/">emojipedia.org</a></p>
+            </section>
+            <section>               
+                <h1>Imagens no HTML:</h1><hr>
+                <h2>Adicionar imagens:</h2>
+                <h3>tag IMG:</h3>
+                <p>Para colocar imagens você precisa baixar uma imagem  ou escolher alguma imagem do seu computador, e colocar
+                    junto da pasta que está seu arquivo HTML (Com um nome fácil de preferência). </p>
+                <p>Feito isso é só usar a tag &lt;img&gt;  Essa tag é assim:<pre> &lt;img src="" alt=""&gt;</pre></p>
+                <p>Você vai colocar o nome da imagem com '.png'  entre os primerios
+                    parênteses ("") (png é um dos melhores formatos que existem)  e entre o   segundo parêntesis ("") vai usar um parâmetro.</p>
+                <p>Uma forma fácil de selecionar qualquer imagem, link ou arquivo que você adicionou na sua pasta, junto   com seu
+                    arquivo HTML é deixar o cursór no meio das aspas ("") src, segurar o <strong>'ctrl'</strong> no   teclado e precionar a teclá
+                    <strong>'espaço'</strong>. Assim vao aparecer a lista de todos os arquivos da pasta.</p>
+                <img src="imagens/boneco.png" alt="Exemplo de imagem">
+                <p>Na imagm acima foi feito assim:<pre>&lt;img src="imagens/boneco.png" alt="Exemplo de imagem"&gt;</pre></p>
+                <h3>Direitos autorais:</h3>
+                <p>Usar qualquer midia pode dar algum problema, se não for de usó livre. Essa imagem do exemplo foi tirada do   site
+                    <a href="https://www.pexels.com/pt-br/" target="_blánk" rel="external">pexels</a> e tem todos os direitos livres
+                    para usó. Usó de midias com direitos autorais podem ser bastante   problematicos, os donos do produto podem te processar, pedir que
+                    tire seu site do ar, entre outras coisas.</p>
+                <h3>Tamanho de imagens:</h3>
+                <p>Existem vários tipos de imagens, por exemplo o <strong>.jpg</strong> o diferencial desse
+                    formato é que tem uma auta   compactação. O <strong>.png</strong> tem uma compactação um pouco menor mas permite
+                    transparência. Também tem o   farmato <strong>.gif</strong> com baixa compactação, mas permite animacão e transparência.
+                <p>Tamanho de imagens é um assunto muito importante, o grande professór Guanabara   falou: <q>
+                    Uma imagem de largura de <em>1500 megas</em> é mais que o suficiente para usar em sites.</q></p>
+                <p><strong>Obs:</strong> Quando editar o tamanho de imagens você precisa redimencionar proporcionalmente o tamanho  e largura.
+                    Normalmente imagens usadas em sites tem <strong>600 megas</strong> de tamanho, que é um tamanho ótimo.</p>
+                <p>Então é bom sempre deixar seus arquivos de imagens sempre com tamanhos pequenos,   para não ser um site tão pesado.</p>
+                <h3>Carregando imagens:</h3>
+                <p>Podemos carregar imagens da própria pasta que fica seu arquivo HTML,como no exemplo   que você viu, mas Também tem outras
+                    formas.  Por exemplo, podemos fazer uma pasta de imagens dentro da própria pasta que estar o arquivo   HTML.  Fazendo
+                    isso não vai funcionar só colocar o nome da imagem, vai ser mais fácil usar a   forma de pesquisar os arquivos segurando
+                    <strong>'ctrl'</strong> e precionando a teclá <strong>'espaço'</strong>.</p>
+                <p>Também dá para usar um 'link', você busca em seu navegador a imagemque quer, então clica   com o segundo botão do mouse
+                    e clica em 'copiar endereço da imagem'. Usa esse link copiado   no lugar onde colocaria o nome da imagem na tag
+                    <strong>&lt;img&gt;</strong> e essa imagem vai ser mostrada   buscando direto da internet. Essa imagem vem de outro servidor,
+                    então se o servidor cair a   imagem não vai ser mostrada. Será mostrado apenas o parâmetro posto na tag.</p>
+                <h2>Imagens que se adaptam sózinhas:</h2>
+                <h3>Compatível com todos os dispositivos:</h3>
+                <p>Hoje se usam muitos dispositivos para navegar na internet. Celuláres, teblets e computadores são   exemplos. A diferença deles são o
+                    tamanho de cada um, e para ter uma melhor foma de navegar em um site é importante ter imagens que se adaptem a cada tamanho. Como
+                    exemplo fiz três imagens de tamanhos diferentes, uma de 300 x 300, outra de 700 x 700 e a última 850 x 850. Vamos usar a tag
+                    <strong>&lt;picture&gt;</strong> e dentro vamos usar as tags de imagem <strong>&lt;img&gt;</strong>. Usamos a tag picture para informar
+                    que vai ter imagem nesse lugar do arquivo. E essa tag Também permite usar várias fontes de imagens, precisamos dessa função
+                    pois precisaremos que a imagem mude de acordo com o tamanho. Nesse   exemplo, como falado, vamos usar três tamanhos. A imagem abaixo
+                    é adaptável. Pode aumentar e   diminuir seu navegador para testar.</p>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="imagens/P.png" type="image/png">
+                    <source media="(max-width: 850px)" srcset="imagens/M.png" type="image/png">
+                    <img src="imagens/G.png" alt="imagem flexivel">
+                </picture>
+                <p>Foi feito exatamente assim: </p>
+                <pre>
+&lt;picture>
+    &lt;source media="(max-width: 700px)" srcset="imagens/P.png" type="image/png">
+    &lt;source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
+    &lt;img src="imagens/G.png" alt="imagem flexivel">
+&lt;/picture></pre>
+                <p>Olhando para o código acima podemos ver que foi usado a tag <strong>&lt;picture&gt;</strong> e em seguida a tag
+                    <strong>&lt;source&gt;</strong>. Mas primeiro coloquei a tag <strong>&lt;img&gt;</strong> com a maior imagem criada 1000 x 1000.
+                    Em seguida o <strong><q>visual studio code</q></strong> quando digitamos a iniciais da palavra source vão aparecer algumas
+                    opções, você irá escolher a <strong><q> source media type</q></strong>, quando selecionar essa opção, vai auto preencher da
+                    seguinte forma:</p>
+                <pre>&lt;source media="(min-width: )" srcset="" type="image/"></pre>
+                <p>Podemos observar que auto preenche com o <code><q>min-width</q></code>. Foi auterado para o máximo que é a maneira   que acho mais
+                    fácil de usar: <code><q>max-width</q></code>, logo em seguida preencha o tamamho máximo permitido para que não tenha barra de
+                    rolagem na sua imagem (Nesse caso foi de 1050px). No próximo parâmetro você colocará sua imagem média. Infelizmente não consegui
+                    buscar com o <strong>ctrl espaço</strong>, mas já foi mostrado como faz para colocar imagens. E por ultimo, no parâmetro type
+                    você vai colocar o tipo de imagem que foi usado.(No caso foi usado o png)</p>
+                <p>Observe que o source para troca de imagem de grande para média foi em cima da tag <strong>&lt;img&gt;</strong>. O source da imagem
+                    pequena será em cima do source anterior, como demonstrado no exemplo. Será da mesma forma,   mas com o whith máximo 700px e a imagem
+                    que sera posta será a pequena que foi renomeada assim: p.png. E está na pasta imagens.</p>
+                <h2>Fivecon:</h2>
+                <h3>Como mudar o fivecon do seu site:</h3>
+                <p>O formato da imagem tem que ser <strong>'.ico'</strong> , você pode achar várias imagens nesse formatos na web. O
+                    <a target="_blank" href="https://iconarchive.com/">iconarchive.com</a> é um site que tem uma quantidade enorme de ícones 
+                    para escolher. Se você for criativo e paciente, dá pra você mesmo fazer seu ícone do seu site. No site 
+                    <a target="_blank" href="https://www.favicon.cc/">favicon.cc</a> dá pra fazer seu ícone, é um pouco trabalhoso, 
+                    mas sai da forma que desejar. Tem mais uma forma de fazer seu ícone, no site 
+                    <a target="_blank" href="https://favicon.io/">fivecon.io</a>. Nesse site dá pra você fazer um texto, 
+                    uma imagem ou até mesmo um emoji você transformar em um ícone.</p>
+                <p>Para adicionar seu ícone basta ir na cabeça do HTML (Na tag <strong>&lt;head&gt;</strong>), em cima da tag
+                    <strong>&lt;tittle&gt;</strong> escrava 'link' nessa hora vai aparecer uma lista com vários tipos de links
+                    que podem ser usados. Escolha a opção <strong>'favicon'</strong>, vai preencher automaticamente o comando,
+                    agora é só apagar dessa linha autopreenchida o que está dentro das aspas <strong>'fivecon.ico'</strong>, então é só apartar
+                    <strong>'ctrl'</strong><strong>'espaço'</strong> no seu teclado e usar o ícone que quiser.</p>
+            </section>
+            <section>
+                <h1>Áudio no HTML:</h1><hr>
+                <h2>Usar áudio:</h2>
+                <h3>Como adicionar:</h3>
+                <p>Podemos adicionar áudios no nosso site também, usando a tag <strong>&lt;audio&gt;</strong>. Aqui vai o exemplo:</p>
+                <pre>&lt;audio src="exemplodeáudio.mp3"></áudio></pre>
+                <p>Assim seu áudio será inserido no seu arquivo, mas não vai tocar. Para tocar você pode colocar os parâmetros <strong>autoplay</strong>
+                que vai iniciar o áudio assim que o site for carregado ou o <strong>controls</strong> que mostrará um controle de áudio.
+                Dessa forma:</p>
+                <pre>
+&lt;audio src="audios/audio1.mp3" autoplay></audio>
+
+&lt;audio src="audios/audio1.mp3" controls></audio></pre>
+                <audio src="audios/audio1.mp3" controls></audio>
+                <p>Qaundo for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
+                    o parâmetro loop faz o seu áudio rainiciar sem parar, é bem comum ser usado quando o áudio é curto. Ex:</p>
+                <pre>&lt;audio src="áudios/áudio1.mp3" autoplay loop></audio></pre>
+                <p>Dependendo do navegador o áudio não irá funcionar, mas temos como resolver esse problema usando autros formatos de áudio.
+                    Temos os formatos <strong>OGG</strong>, <strong>WAV</strong> e o que usamos de exemplo <strong>MP3</strong>.
+                    Você converte o áudio para esses três tipos e coloca no seu arquivo. Assim, se o navegardor não for conpativel com um, será com
+                    o outro. Para colocar os três formatos temos que usar o <strong>type</strong>. Quando usamos a tag <strong>&lt;audio&gt;</strong>
+                    ela se auto preenche com o <strong>src</strong>.</p>
+                <pre>&lt;audio src="">&lt;/audio></pre>
+                <p>Apagamos esse <strong>src</strong> e vamos dar um <strong>enter</strong> entre as tags de abertura e fechamento para colocarmos o
+                <strong>source</strong>.   Dessa forma:</p>
+                <pre>
+&lt;audio>
+
+&lt;/audio></pre>
+                <p>E vamos colocar manualmente o <strong>source</strong>. Vimos na parte de imagens no HTML que enquanto estamos digitando   a palavra
+                    a no seu <strong>visual studio code</strong>, vão aparecendo várias opções e você irá escolher a opção
+                    <strong>source src</strong>. Dessa forma:</p>
+                <pre>
+&lt;audio>
+    &lt;source src="" type="">
+&lt;/audio></pre>
+                <p>Agora preencha com os áudios que você converteu e o tipo de cada um. Dessa forma:</p>
+                <pre>
+&lt;audio>
+    &lt;source src="exemplo1.mp3" type="audio/mpeg">
+    &lt;source src="exemplo2.ogg" type="audio/ogg">
+    &lt;source src="exemplo3.wav" type="audio/wav"a
+&lt;/audio></pre>
+                <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
+                    <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
+                    o tipo de midia que irá usar. Clica   no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
+                    busca e é só buscar o tipo de arquivo que está   usando clicando no <strong><q>enter</q></strong>. Obs: Para navegar no site
+                    em busca do que você quer, depois que pesquisou o tipo do   arquivo, basta ficar clicando no enter até achar.</p>
+                <p>Agora que está adicionado os princpais tipos de áudios colocaremos as pré configurações na tag áudio já citadas acima.
+                    E se mesmo assim o áudio não for iniciado colocaremos uma forma dele ser baixado. Dessa forma o áudio será apresentado para
+                    quem está navegando no site de alguma maneira.</p>
+                <pre>
+&lt;audio controls autoplay loop>
+    &lt;source src="exemplo1.mp3" type="audio/mpeg">
+    &lt;source src="exemplo2.ogg" type="audio/ogg">
+    &lt;source src="exemplo3.wav" type="audio/wav">
+    &lt;p>Infelizmente seu navegador não consegue reproduzir áudio.&lt;a href="exemplo1.mp3">
+    &lt;/a>Clique aqui para baixar o arquivo MP3&lt;/p>
+&lt;/audio></pre>
+                <p>Mais uma dica sobre tamanho de arquivo: Evite usar o tipo WAV de áudio porque mesmo sendo Compatível ele é   muito grande e pode
+                    deixar seu site bem pesado.</p>
+            </section>
+            <section>                
+                <h1>Vídeo no HTML</h1><hr>
+                <h2>Adicionando vídeos:</h2>
+                <h3>Hospedados localmente:</h3>
+                <p>Os principais formatos de vídeo para serem usados são: MP4 (.mp4, .m4v), WEBM(.webm) e o OGV(.ogv).
+                Para mostrar o vídeo no arquivo basta usar a tag <strong>&lt;video&gt;</strong> que no visual studio code já vem auto preenchido
+                com <strong>src</strong>. exatamente assim:</p>
+                <pre>&lt;video src="exemplovideo.mp4">&lt;/video></pre>
+                <p>Temos o mesmo problema com direitos autorais com os vídeos, então vou pegar um vídeo sem direitos autorais no já citado
+                    <a href="https://www.pexels.com/pt-br/videos/" target="_blánk" rel="external">pexels</a> e usar aqui como exemplo. Se não for usado
+                    com o parêmtro controls ficará exatamente assim:</p>
+                <video src="videos/video1.mp4" width="200"></video>
+                <p>Assim fica com o parâmetro controls:</p>
+                <video src="videos/video1.mp4" width="200" controls></video>
+                <p>Assim nós temos o mesmo problema com a questão de compatibilidade do seu navegador com o formato do vídeo. Para resolver faremos
+                    da mesma forma que no áudio, com todos os formatos.</p>
+                <video controls >
+                <source src="exvideo1.mp4" type="video/mp4">
+                <source src="exvideo2.ogv" type="video/ogv">
+                <source src="exvideo3.webm" type="video/webm">
+                <p>Seu navegador não é Compatível com o vídeo.</a></p>
+                </video>
+                <p>O exemplo acima está da seguinte forma:</p>
+                <pre>
+&lt;video controls>
+    &lt;source src="videos/video1.mp4" type="video/mp4">
+    &lt;source src="videos/video1.ogv" type="video/ogv">
+    &lt;source src="videos/video1.webm" type="video/webm">
+    &lt;p>Seu navegador não é Compatível com o video.</a>
+&lt;/video></pre>
+                <p>Um parâmtro interessante de ser usado quando for colocar vídeos no seu site é o de capa para seu vídeo, pois se não colocar a capa
+                    será o primeiro frame do vídeo, que na maioria das vezes não fica legal. O parâmetro é o <strong>poster</strong></p>
+                <pre>
+&lt;video controls poster="imgemdecapa">
+    &lt;source src="videos/video1.mp4" type="video/mp4">
+    &lt;source src="videos/video1.ogv" type="video/ogv">
+    &lt;source src="videos/video1.webm" type="video/webm">
+    &lt;p>Seu navegador não é Compatível com o vídeo.
+&lt;/video></pre>
+                <video controls poster="imagens/boneco.png">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    <source src="videos/video1.ogv" type="video/ogv">
+                    <source src="videos/video1.webm" type="video/webm">
+                    <p>Seu navegador não é Compatível com o vídeo.</p>
+                </video>
+                <p>Estava com preguiça de fazer uma capa de exemplo, então usei a imagem que já tinha usado como exemplo. Os parâmetros de autoplay
+                    e loop Também funcionam com vídeos.</p>
+                <h3>Incorporar vídeos com links externos:</h3>
+                <p>Vídeos da internet são muito simples de serem incorporados, você vai no vídeo que desejá por no seu site e   clica em compartilhar,
+                    depois em incorporar se o dono do vídeo deixou liberado vai te gerar um link, copia   o link e cola no seu arquivo html.
+                    Assista o vídeo do mestre guanabara e você entenderar tudo.</p>
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p>No vídeo ele explica que o mais reconmendado é usar o youtube como base do seus vídeos, pois deixar tudo   hopedado em um servidor pago,
+                    vai te gerar muito gasto e trabalho. </p>
+            </section>
+            <section>               
+                <h1>Listas:</h1><hr>
+                <h2>Tipos de listas:</h2> 
+                <h3>Listas ordenadas:</h3>
+                <p>As listas ordenadas servem para que se possa alterar qualquer posisão da ordem dela sem ter tanto trabalho.
+                    Por exemplo:</p>
+                    1 escovar os dentes
+                    2 merendar
+                    3 tomar banho
+                    4 ligar para minha mãe
+                    <p>Se precisar adicionar outro item, e ele precisa estar na terceira posição, você vai ter que adicionar e mudar
+                    a   ordem de todos os itens abaixo. Na lista do exemplo acima não parece tão trabalhoso, mas pensa numa lista
+                    com 100 itens e precisa colocar um na posição 3. Nesse caso seria desesperador não é?</p>
+                    <p>Por isso temos a lista ordenada, que usa a tag <strong>&lt;ol&gt;</strong>. Vamos abrir a tag e dentro dela cada
+                    item da lista ficará  com a tag <strong>&lt;il&gt;</strong>.</p>
+                <p><strong>Ex:</strong> Cores que mais gosto:</p>
+                <ol>
+                    <li>azul</li>
+                    <li>cinza</li>
+                    <li>laranja</li>
+                    <li>preto</li>
+                </ol>
+                <p>O código fica exatamente assim:</p>
+                <pre>
+&lt;ol&gt;
+    &lt;li&gt;azul&lt;/li&gt;
+    &lt;li&gt;cinza&lt;/li&gt;
+    &lt;li&gt;laranja&lt;/li&gt;
+    &lt;li&gt;preto&lt;/li&gt;
+&lt;/ol&gt;</pre>
+                <p>Assim sempre que precisar mudar a precedência da lista é só colocar na posição desejada, que os   números vão
+                    mudar automaticamente.</p>
+                <p>Dentro da tag <strong>&lt;ol&gt;</strong> você pode colocar o parâmetro <strong>type</strong>, que vão ter 5 tipos:</p>
+                <p><strong>Tipo 1:</strong> Representado pelo número 1. É o padrão, e vai ser uma lista númerica.   <strong>Tipo 2:</strong>
+                    Que é representado pela letra 'A' maiúscula, é uma lista alfabetica com letras maiúsculas.   <strong>Tipo 3:</strong> É
+                    representado pela letra 'a' minúscula e vai fazer uma lista com letras minúsculas.  <strong>Tipo 4:</strong> É a letra 'I'
+                    maiúscula e irá fazer uma lista com os algarismos romanos.  <strong>Tipo 5:</strong> É representado com a letra
+                    i minúscula e Também irá fazer uma lista com os algarismos romanos só que de um tamanho menor.</p>
+                <h3>Listas não ordenadas:</h3>
+                <p>São listas que no título já deixa claro, não tem ordem. A tag usada para fazer esse tipo de lista é a
+                    <strong>&lt;ul&gt;</strong>.</p>
+                <p>Vai ficar exatamente assim:</p>
+                <pre>
+&lt;ul&gt;
+    &lt;li&gt;azul&lt;/li&gt;
+    &lt;li&gt;cinza&lt;/li&gt;
+    &lt;li&gt;laranja&lt;/li&gt;
+    &lt;li&gt;preto&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                <p>Dentro da tag <strong>&lt;ul&gt;</strong> você  Também pode colocar o parâmetro <strong>type</strong>, que
+                    vão ter 3 tipos:</p>
+                <h4>"disc"(que é o padrão):</h4>
+                <ul type="disc">
+                    <li>azul</li>
+                    <li>cinza</li>
+                    <li>laranja</li>
+                    <li>preto</li>
+                </ul>
+                <h4>"circle":</h4>
+                <ul type="circle">
+                    <li>azul</li>
+                    <li>cinza</li>
+                    <li>laranja</li>
+                    <li>preto</li>
+                </ul>
+                <h4>"square":</h4>
+                <ul type="square">
+                    <li>azul</li>
+                    <li>cinza</li>
+                    <li>laranja</li>
+                    <li>preto</li>
+                </ul>
+                <h4>Podemos usar a indentação:</h4>
+                <p>A indentação de lista é uma boa opção para organizar listas, pode usar tag <strong>&lt;ol&gt;</strong> junto
+                com tag <strong>&lt;ul&gt;</strong>, tanto faz   a ordem. isso faz suas listas mais fáceis e bem mais trabalhadas.</p>
+                <ol>
+                    <li>Fortaleza</li>
+                        <ul>
+                            <li>Vermelho</li>
+                            <li>Azul</li>
+                            <li>Branco</li>
+                        </ul>
+                    <li>Ceará</li>
+                        <ul>
+                            <li>Preto</li>
+                            <li>Branco</li>
+                        </ul>
+                </ol>
+                <h3>Lista de Definições:</h3>
+                <p>Nesse tipo de lista abrimos com a tag &lt;dl&gt; com isso abrimos o termo com a tag <strong>&lt;dt&gt;</strong>
+                    e a definição com a tag <strong>&lt;dd&gt;</strong>. <strong>Ex:</strong></p>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+                    <dt>CSS</dt>
+                    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+                    <dt>jávaScript</dt>
+                    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+                </dl>
+                <p>Fica como um dicionário, com o termo e a definição. Esse é o exemplo acima:</p>
+                <pre>
+&lt;dl>
+    &lt;dt>HTML&lt;/dt>
+    &lt;dd>Linguagem de marcação para a criação do conteúdo de um site.&lt;/dd>
+    &lt;dt>CSS&lt;/dt>
+    &lt;dd>Linguagem de marcação para a criação do design de um site.&lt;/dd>
+    &lt;dt>jávaScript&lt;/dt>
+    &lt;dd>Linguagem de programação para a criação de interatividade de um site.&lt;/dd>
+&lt;/dl></pre>
+            </section>
+            <section>
+                <h1>Links:</h1> <hr>
+                <h2>Tipos de links</h2>
+                <h3>Links externos:</h3>
+                <p>Você pode usar links usando a tag <strong>&lt;a&gt;</strong>. Vai aparecer a referência, da seguinte forma:</p>
+                <p><strong>&lt;a href="e aqui você coloca o link desejádo"</strong>. É recomendado que depois da referência usar
+                    <strong>target="_blánk" rel="external"</strong> pois quando clicar no link, o mesmo irá se sobrepor ao seu,
+                    então o primeiro parâmetro vai fazer abrir o link numa outra aba do navegar. Caso não use quem está navegando
+                    no seu site, quando clicar no link dificilmente valtarão para o seu site. O outro parâmetro "rel" é usado como
+                    uma referência para o navegador, indica como você quiser para onde deve ser o próximo passo a ser seguido. O
+                    navegador pade dar a "rel" caso não coloque, então é muito importante o usó desse parâmetro.    </p>
+                <p>Aqui vai o exemplo de link, esse é o site do meu amigo Guanabara: <a href="https://gustavoguanabara.github.io/"
+                    target="_blánk" rel="external"> Repositório público no GitHub.</a></p>
+                <p>Você Também pode acessar o canal dele: <a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external">
+                    Canal gratuito no youtube.</a></p>
+                <p>Esses exemplos foram feitos exatamente assim:</p>
+                <pre>&lt;a href="https://gustavoguanabara.github.io/" target="_blánk" rel="external"> Canal gratuito no youtube.&gt;</pre>
+                <pre>&lt;a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external"> Canal gratuito no youtube.&gt;</pre>
+                <h3>Usando links internos:</h3>
+                <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">
+                    segunda página</a> Faço isso abrindo   um novo arquivo HTML no <strong>'Visual Studio Code'</strong> na mesma pasta que o
+                    arquivo atual. Igual como os links externos,   basta usar a tag <strong>&lt;a&gt;</strong> e colocar a url do seu novo arquivo.
+                    Uma forma mais fácil de fazer isso é usando o nome do arquivo que você criou. No link da minha segunda página foi feito assim:</p>
+                <pre>&lt;a href="pag002.html" rel="next"> segunda Página.&gt;</pre>
+                <p>Também pode criar um novo arquivo em uma pasta diferente, mas não poderá simplesmente colocar o nome do   arquivorecém  criado,
+                    como no exemplo anterior, pois dará erro. Para resolver esse erro basta usar o atalho <strong>'ctrl'</strong> <strong>'espaço'
+                    </strong> que vão aparecer todos os arquivos e pastas que você criou. Busque o arquivo abrindo as pastas e selecione   seu
+                    link para funcionar.</p>
+                <p>Para entender melhor, fiz a uma pasta com o nome <strong>'maispg'</strong> e criei a <strong>'pag003.html'</strong>.
+                    Agora veja como ficou: <pre>&lt;a href="maispg/pag003.html">Mais páginas.&gt;</pre>Fica com o nome da pasta
+                    antes do nome do arquivo, mostrando o caminho para o sistema achar o arquivo solicitado.</p>
+                <p>Dentro da página 3 vai ter uma dica sobre usar links internos.
+                <a href="maispg/pag003.html">Terceira página.</a></p>
+                <h3>Links para download:</h3>
+                <p>Fazer links para dawnload de PDF é muito simples, usa-se a tag <strong>&lt;a&gt;</strong> Também, mas possa ser que seu navegador
+                    não baixe seu arquivo e apenas o mostre, para baixar você pode clicar no segundo botão do mouse e baixar link. Pode Também
+                    tentar usar o parâmetro download com o nome do arquivo que quer baixar, se não funcionar tem mais uma configuração, o parâmetro type
+                    que usa <strong>application/pdf</strong> para mídia em pdf.</p>
+                <p>Vou exemplificar com o PDF do <a href="pdf/pdfdelinks.pdf" download="pdfdelinks.pdf" type="application/pdf">cursó em video</a> para
+                    download, que foi feito exatamene assim: <pre>&lt;a href="pdf/pdfdelinks.pdf" download="pdfdelinks.pdf" type="application/pdf"></pre></p>
+                <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
+                    <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
+                    o tipo de mídia que irá usar. CLica no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
+                    busca e é só buscar o tipo de arquivo que está usando clicando no <strong><q>enter</q></strong>. Obs: Para navegar no site
+                    em busca do que você quer, depois que pesquisou o tipo do arquivo, basta ficar clicando no enter até achar.</p>
+                <p>Você Também pode compactar seu PDF em ZIP e usar as seguintes configurações nos parâmetros já citados:
+                    <pre>download="o nome do arquivo zipado" type="application/zip"</pre>Dessa forma o seu navegador Também vai baixar o arquivo
+                    do link.</p>
+            </section>
+            <section>               
+                <h1>CSS básico:</h1><hr>
+                <h2>Três formas de usar o css:</h2>
+                <h3>Estilo inline:</h3>
+                <p>É o menos recomendado porque dá muito trabalho e é pouco produtivo. Nessa forma você vai mudar o estilo na própria tag.
+                    Para usar exemplos mais faceis de serem entendidos, vamos colocar em páginas diferentes para vermos como ficam as mudanças.
+                    No primeiro exemplo vamos na tag <strong>&lt;body&gt;</strong> e dentro dela vamos colocar um parâmetro style
+                <a href="maispg/cssinline1.html">Nesse link</a> </p>
+                <h3>Estilos locais ou internos:</h3>
+                <p>Aqui vamos usar uma forma bem mais eficaz de mudar o estilo do seu site. Na cabeça do seu arquivo html vamos usar a tag
+                    <strong>&lt;body&gt;</strong>. Como no exemplo anterior faremos isso em uma  <a href="maispg/csslocais.html">página nova</a>.</p>
+                <h3>Estilos externos:</h3>
+                <p>Como comentado na página do exemplo de estilos locais, o CSS usa muitas linhas para deixar seu site bonito. E seu arquivo   HTML pode
+                    ser bem grande, Nesse caso é melhor usar o estilo externo para ficar organizado. O estilo externo também serve quando você tem
+                    vários sites e o estilo são bem parecidos.</p>
+                <p>vamos entender como funciona, no lugar de colocarmos uma tag style na cabeça do arquivo, nos vamos criar um link de css.
+                    Você só precisa ir no mesmo lugar onde criamos a tag style escrever link e vão aperecer várias opções, escolha o link css.
+                    vai auto preencher da seguinte forma: </p>
+                <pre>&lt;link rel="stylesheet" href="style.css"></pre>
+                <p>Você pode tentar entrar, mas ainda não vai funcionar. Para funcionar você terá que criar esse link,. Precisa apenas segurar o botão
+                    <strong>crtl</strong> e clicar em cima do link. Nessa hora vai aparecer uma notificação que o link não existe, agora basta clicar em
+                    criar link.</p>
+                <p>Agora tudo que você estava fazendo na cabeça do seu arquivo poderá ser feito em outro arquivo separado.</p>
+                <h2>Medidas:</h2><hr>
+                <h3>Medidas absolutas e relativas:</h3>
+                <p><strong><ins>cm</ins></strong> (centimetros), <strong><ins>mm</ins></strong> (milimetros), <strong><ins>in</ins></strong> (polegada),
+                    <strong><ins>px</ins></strong> (pixel), <strong><ins>pt</ins></strong> (ponto), <strong><ins>pc</ins></strong>
+                    (paica). São as medidas absolutas.</p>
+                <p>E <strong><ins>em</ins></strong> (Medida relativa ao tamanho M da fonte), <strong><ins>ex</ins></strong>
+                    (Medida relativa ao tamanho x da fonte), <strong><ins>rem</ins></strong>  (Medida Também ralativa ao M, mas considarando o que
+                    está no CSS), <strong><ins>vw</ins></strong> (Medida relativa a largura da tela do dispositivo usasdo), <strong><ins>vh</ins></strong>
+                    (Medida relativa a altura da tela do dispositivo usado), <strong><ins>%</ins></strong> (Medida relativa a porcentagem).
+                    São as medidas relativas.</p>
+                <h4>dica:</h4>
+                <p>É recomendado usar as medidas <strong>em</strong> e <strong>px</strong>.</p>
+                <h2>Primeiras formatações:</h2><hr>
+                <h3>Texto:</h3>
+                <p><strong>font-family</strong> (serve para mudar a fonte das letras); <strong>font-size</strong> (serve para mudar o tamanho da fonte);
+                    <strong>font-weigth</strong> (serve para mudar pesó da fonte); <strong>font-style</strong> (serve para colocar em Itálico);
+                    <strong>text-decoration</strong> (serve para colocar sublinhado usando o underline.)</p>
+                <h3>Mais opções de fontes:</h3>
+                <p>Para vê como se colocam no seu arquivo HTML basta assistir esse video do Guanabara, que você irá entender tranquilámente.</p>
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3YIXnxA1kqg?start=351" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p><a href="https://fonts.google.com/">Google fonts</a> você pode achar muitas fontes gratuitas.
+                <a href="https://www.dafont.com/pt/">Da fonte</a> É outro site que tem muitas fontes.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Desenvolvido por: Humberto Monteiro. <a class="baixo" target="_blank" href="https://www.instagram.com/humberto.fh/">instagran</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </html>

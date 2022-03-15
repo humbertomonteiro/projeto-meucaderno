@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos locais</title>
+    <style>
+        body {
+            background-color: rgb(127, 208, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1 {
+            color: rgb(253, 253, 253);
+            background-color: rgb(157, 162, 167);
+            font-size: 1,2em;
+            text-align: center;
+        }
+        h2 {
+            color: rgb(255, 255, 5);
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilo locais ou internos:</h1>
+    <h2>Mais eficaz</h2>
+    <p>Como visto na página anterior precisamos abrir uma tag <strong>&lt;style&gt;</strong> na cabeça do seu arquivo HTML.  
+        Normalmente faço abaixo da tag <strong>&lt;title&gt;</strong>. Da seguinte forma:</p>
+    <pre>
+        &lt;head>
+            &lt;meta charset="UTF-8">
+            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+            &lt;title>Estilos locais&lt;/title>
+            &lt;style>
+                
+            &lt;/style>
+        &lt;/head>
+    </pre>
+    <p>Tudo dentro dessa tag é CSS, já sabemos que No HTML usamos tags, já no css usamos seletores,   que são muito simples de serem 
+        feitos. Basta que dentro   da tag você escreva o seletor que são as tags do HTML, abra chave, automaticamento o visual studio 
+          code fechará a chave. (Chaves {}) e use as configurações que quiser dentro dessas chaves.</p>
+    <p>Vamos fazer as mesmas configurações que o estilo inline e veremos que tudo vai ficar mais simples   de entender e bem mais 
+        organizado.</p>
+    <pre>
+        &lt;style>
+            body {
+                background-color: aquamarine;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+        &lt;/style>
+    </pre>
+    <p>O estilo vai tomar muitas linhas de código, e por isso essa forma não será a melhor, Vamos usar a   terceira tecnica
+        de estilo para acabar com esse problema.</p>
+    <p>Clique <a href="../index.html">aqui</a> e volte para primeira página</p>
+</html>

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+:root {
+    --cor1: #224242;
+    --cor2: #044B4C;
+    --cor3: #498E8F;
+
+    --padrao: Arial, Helvetica, sans-serif;
+    --titulos:'Merienda', cursive;
+    --subtitulos: 'El Messiri', sans-serif;
+    --forte: 'Mukta', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: none;
+}
+body {
+    background: #e7e7e7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: linear-gradient(to bottom,rgb(59, 112, 112), var(--cor2), var(--cor1));
+    box-shadow: 2px 2px 6px var(--cor);
+    text-align: center;
+    padding-top: 35px;
+}
+nav {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 10px 20px 20px;
+}
+nav > a {
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: white;
+    color: black;
+}
+main {
+    background-color: white;
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 2px 2px 6px #498e8fa1;
+}
+section {
+    background-color: white;
+    text-align: justify;
+    padding: 5px;
+}
+h1#principal {
+    font-family: var(--titulos);
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    font-size: 5em;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+h1 {
+    font-family: var(--titulos);
+    color: #224242;
+    font-size: 4.2em;
+    padding: 20px;
+    padding-left: 5px;
+    text-shadow: 2px 2px 2px rgb(87, 87, 87);
+}
+h2 {
+    font-family: var(--subtitulos);
+    color: #044B4C;
+    font-size: 3em;
+    margin:3px;
+    text-shadow: 1px 1px 2px rgb(87, 87, 87);
+}
+h3 {
+    padding: 2px;
+    font-family: var(--subtitulos);
+    color: var(--cor2);
+    font-size: 1.5em;
+}
+h4 {
+    color: var(--cor2);
+    font-family: var(--subtitulos);
+    font-size: 1.3em;
+    margin: 5px;
+}
+p {
+    text-indent: 30px;
+}
+code {
+    font-size: 1.2em;
+}
+pre {
+    background-color: var(--cor3);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px var(--cor1);
+    transition-duration: 0.5s;
+}
+pre:hover {
+    background-color: var(--cor1);
+    padding: 20px;
+    margin: 0px -20px;
+}
+img {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 3px;
+    box-shadow: 1px 2px 5px var(--cor3);
+}
+audio {
+
+    background-color: var(--cor1);
+    border-radius: 30px;
+    margin: 20px;
+    padding: 3px;
+    box-shadow: 1px 2px 5px var(--cor3);
+}
+video {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 3px;
+    box-shadow: 1px 2px 5px var(--cor3);
+}
+div.video {
+    background-color: var(--cor1);
+    margin: 0px -16px 30px -16px;
+    padding: 20px;
+    padding-bottom: 50%;
+    margin-top: 20px;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+ul {
+    padding: 20px;
+}
+ol {
+    padding: 20px;
+}
+section > p > a {
+    background-color: var(--cor1);
+    font-family: var(--forte);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1px 3px;
+}
+a:hover {
+    text-decoration: underline;
+    background-color: var(--cor3);
+    color: white;
+}
+strong {
+    font-family: var(--forte);
+    font-size: 1.1em;
+    font-weight: bolder;
+    color: var(--cor1);
+}
+mark {
+    background-color:var(--cor3);
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}
+footer {
+    background-color: var(--cor1);
+    font-family: var(--padrao);
+    color: white;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 6px var(--cor3);
+}
+footer a {
+    color:white;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+footer a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    animation-duration: 0.5;
+}

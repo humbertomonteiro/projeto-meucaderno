@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dica</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section>
+    <h1>Ainda sobre links:</h1>
+    <h2>Uma boa dica:</h2>
+    <p>Links de terceiros como visto na leitura da página anterior, se abertos sobrepondo o seu   site, dificilmente
+        voltarão para sua págian novamente, então é importante sempre colocar   uma <strong>target="_blank"</strong>
+        para ser aberto em outra aba.</p>
+    <p>Mas quando são suas próprias páginas a dica é continuar usando o target, só que em vez   de usar _blank 
+        você usará o <strong>_self</strong> que significa mesma aba e abrirá na mesma aba do seu   navegador, evitando 
+        que quem está navegando fique com muitas abas abertas.</p>
+    <p>Agora para voltar para primeira página que está numa pasta diferente você terá que voltar   uma pasta ou dará erro.</p>
+    <p>Para resolver é muito simples, use a tag &lt;a&gt; com isso vamos usar <strong>"./"</strong> para mesma pasta, <strong>"../"</strong> 
+          para pasta anterior. Nesse caso usaremos o <strong>"../"</strong> pos queremos acessar a página anterior. Para  exemplificar 
+        veja como fiz para retornar para página anterior que está em outra pasta:  
+        <pre>&lt;a href="../index.html">Primeira página.</a></pre><a href="../index.html">Primeira página.</a></p>
+    </section>
+</body>
+</html>
