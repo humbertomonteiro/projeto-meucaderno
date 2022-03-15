@@ -36,7 +36,7 @@ nav {
 nav > a {
     color: white;
     font-family: var(--subtitulos);
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-shadow: 1px 1px 2px var(--cor1);
     text-decoration: none;
     border-radius: 5px;
@@ -82,11 +82,11 @@ h2 {
     font-family: var(--titulos);
     color: #044B4C;
     font-size: 1.7em;
-    margin:3px;
+    padding: 10px 5px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h3 {
-    padding: 2px;
+    padding: 3px;
     font-family: var(--subtitulos);
     color: var(--cor3);
     font-size: 1.5em;
