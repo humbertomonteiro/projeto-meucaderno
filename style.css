@@ -101,7 +101,7 @@ pre {
     color: rgb(255, 255, 255);
     padding: 10px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 13px;
     border-radius: 10px;
     box-shadow: 1px 2px 5px var(--cor1);
     transition-duration: 0.5s;
@@ -109,7 +109,8 @@ pre {
 pre:hover {
     background-color: var(--cor1);
     padding: 20px;
-    margin: 0px -16px 30px -16px;
+    margin: 0px -80px;
+    border-radius: 25px;
 }
 img {
     background-color: var(--cor1);
