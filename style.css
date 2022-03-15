@@ -133,6 +133,9 @@ video {
     padding: 3px;
     box-shadow: 1px 2px 5px var(--cor3);
 }
+.videoex {
+    max-width: 200px;
+}
 div.video {
     background-color: var(--cor1);
     margin: 0px -16px 30px -16px;
