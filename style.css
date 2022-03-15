@@ -109,7 +109,7 @@ pre {
 pre:hover {
     background-color: var(--cor1);
     padding: 20px;
-    margin: 0px -20px;
+    margin: 0px -16px 30px -16px;
 }
 img {
     background-color: var(--cor1);
