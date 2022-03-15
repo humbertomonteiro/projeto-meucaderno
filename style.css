@@ -35,15 +35,17 @@ nav {
 }
 nav > a {
     color: white;
-    text-shadow: 2px 2px 6px var(--cor1);
+    font-family: var(--subtitulos);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 2px var(--cor1);
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
     transition-duration: 0.5s;
 }
 nav > a:hover {
-    background-color: var(--cor1);
-    border-radius: 5px
+    background-color: var(--cor3);
+    border-radius: 10px
 }
 main {
     background-color: white;
@@ -74,10 +76,10 @@ h1 {
     font-size: 2.3em;
     padding: 10px;
     padding-left: 5px;
-    text-shadow: 2px 2px 2px rgb(87, 87, 87);
+    text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h2 {
-    font-family: var(--subtitulos);
+    font-family: var(--titulos);
     color: #044B4C;
     font-size: 1.7em;
     margin:3px;
@@ -86,11 +88,11 @@ h2 {
 h3 {
     padding: 2px;
     font-family: var(--subtitulos);
-    color: var(--cor2);
+    color: var(--cor3);
     font-size: 1.5em;
 }
 h4 {
-    color: var(--cor2);
+    color: var(--cor4);
     font-family: var(--subtitulos);
     font-size: 1.3em;
     margin: 5px;
