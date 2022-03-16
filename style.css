@@ -76,19 +76,18 @@ h1 {
     font-family: var(--titulos);
     color: var(--cor1);
     font-size: 2.3em;
-    padding: 10px;
-    padding-left: 5px;
+    padding: 10px 0px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h2 {
     font-family: var(--titulos);
     color: #044B4C;
     font-size: 1.8em;
-    padding: 10px 5px;
+    padding: 10px 0px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h3 {
-    padding: 3px;
+    padding: 3px 0px;
     font-family: var(--subtitulos);
     color: var(--cor2);
     font-size: 1.5em;
