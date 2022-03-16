@@ -6,6 +6,8 @@
     --cor2: #044B4C;
     --cor3: #498E8F;
     --cor4: #6eb3b4;
+    --cor4a: #84d2d3;
+    --cor5: #e7e7e7;
 
     --padrao: Arial, Helvetica, sans-serif;
     --titulos:'Merienda', cursive;
@@ -18,7 +20,7 @@
     text-align: none;
 }
 body {
-    background: #e7e7e7;
+    background: var(--cor5);
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
@@ -28,24 +30,23 @@ header {
     padding-top: 35px;
 }
 nav {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor4a));
     text-align: center;
     font-weight: bold;
-    padding: 10px 20px 10px;
 }
 nav > a {
     color: white;
     font-family: var(--subtitulos);
-    font-size: 1.1em;
+    font-size: 1em;
     text-shadow: 1px 1px 2px var(--cor1);
     text-decoration: none;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 2px 20px;
     transition-duration: 0.5s;
-}
+}   
 nav > a:hover {
     background-color: var(--cor3);
-    border-radius: 10px
+    padding: 2px 20px;
+    border-radius: 5px
 }
 main {
     background-color: white;
@@ -81,21 +82,38 @@ h1 {
 h2 {
     font-family: var(--titulos);
     color: #044B4C;
-    font-size: 1.7em;
+    font-size: 1.8em;
     padding: 10px 5px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h3 {
     padding: 3px;
     font-family: var(--subtitulos);
-    color: var(--cor3);
+    color: var(--cor2);
     font-size: 1.5em;
 }
 h4 {
-    color: var(--cor4);
+    color: var(--cor3);
     font-family: var(--subtitulos);
     font-size: 1.3em;
+    text-decoration: underline;
     margin: 5px;
+}
+aside {
+    background-color: var(--cor5);
+    border-radius: 5px;
+    padding: 0px 20px 10px;
+    margin: 0px 10px;
+}
+aside > h4 {
+    background-color: var(--cor2);
+    text-align: center;
+    color: white;
+    margin: 10px -20px;
+    border-radius: 5px 5px 0px 0px;
+}
+aside > p > strong {
+    color: var(--cor1);
 }
 p {
     text-indent: 30px;
