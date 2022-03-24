@@ -17,36 +17,41 @@
 * {
     margin: 0px;
     padding: 0px;
-    text-align: none;
 }
 body {
     background: var(--cor5);
     font-family: Arial, Helvetica, sans-serif;
 }
-header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
-    text-align: center;
-    padding: 5px 5px;
-    padding-top: 35px;
-}
-nav {
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor4a));
-    text-align: center;
-    font-weight: bold;
-}
-nav > a {
+
+a {
     color: white;
+    text-decoration: none;
+}
+.inicio {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo {
+    font-family: var(--titulos);
+    font-size: 2.7em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);  
+}
+
+.menu > a {
     font-family: var(--subtitulos);
     font-size: 1em;
-    text-shadow: 1px 1px 2px var(--cor1);
-    text-decoration: none;
     padding: 2px 20px;
     transition-duration: 0.5s;
-}   
-nav > a:hover {
+}
+
+.menu > a:hover {
     background-color: var(--cor3);
     padding: 2px 20px;
-    border-radius: 5px
+    border-radius: 5px;
 }
 main {
     background-color: white;
@@ -58,20 +63,7 @@ main {
     border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 6px #498e8fa1;
 }
-section {
-    background-color: white;
-    text-align: justify;
-    padding: 5px;
-    font-size: 0.9em;
-}
-h1#principal {
-    font-family: var(--titulos);
-    color: white;
-    padding: 10px;
-    font-size: 2.7em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
-    transition-duration: 0.7s;
-}
+
 h1 {
     font-family: var(--titulos);
     color: var(--cor1);
@@ -125,8 +117,9 @@ code {
 pre {
     background-color: var(--cor4);
     padding: 10px;
-    margin: 15px -16px 15px -16px;
-    font-size: 1em;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 pre:hover {
     background-color: var(--cor1);
@@ -136,8 +129,8 @@ pre:hover {
 img {
     background-color: var(--cor1);
     border-radius: 20px;
-    margin: 10px;
     padding: 3px;
+    margin: 10px;
     box-shadow: 1px 2px 5px var(--cor3);
 }
 audio {
@@ -160,7 +153,8 @@ video {
 }
 div.video {
     background-color: var(--cor1);
-    margin: 0px -16px 30px -16px;
+    margin: 0px -5px 30px -5px;
+    border-radius: 10px;
     padding: 20px;
     padding-bottom: 50%;
     margin-top: 20px;
@@ -187,10 +181,11 @@ section > p > a {
     text-decoration: none;
     padding: 1px 3px;
 }
-a:hover {
+p > a:hover {
     text-decoration: underline;
     background-color: var(--cor3);
     color: white;
+    text-decoration: none;
 }
 strong {
     font-family: var(--forte);
@@ -208,14 +203,14 @@ footer {
     background-color: var(--cor1);
     font-family: var(--padrao);
     color: white;
-    margin-top: 10px;
+    text-align: center;
     padding-bottom: 20px;
     padding: 20px;
     box-shadow: 2px 2px 6px var(--cor3);
 }
-footer a {
+footer > a {
     color:white;
-    padding: 10px;
+    padding: 20px;
     transition-duration: 0.5s;
 }
 footer a:hover {

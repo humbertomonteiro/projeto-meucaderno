@@ -10,15 +10,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1 id="principal">My Notebook</h1>
-        </header>
-        <nav>
+        <header class="inicio">
+        <div id="logo">
+            <h1><a href="index.html">My Notebook</a></h1>
+        </div>
+        <div class="menu">
             <a href="index.html">Página inicial</a>
             <a href="maispg/menu.html">Menu</a>
             <a href="maispg/sobre.html">Sobre</a>
             <a href="maispg/redes.html">Contatos</a>
-        </nav>
+        </div>
+        </header>
         <main>
             <section>
                 <h1>Primeiros passos:</h1><hr>
@@ -96,21 +98,15 @@
                     escrever   código com a formatacão correta.  Como exemplo olhe esse código em python:</p>
                 <code>num = int(input('Digite um número:'))
                     if num % 2 == 0:
-                        print(f'O número {num} é PAR')
+                        print(f'O número {num} é PAR')  
                     else:
                         pront(f'O número {num} é IMPAR')
                     print('Fim do programa')</code>
                 <p>No arquivo HTML está todo escrito com a formatação correta, mas quando abre o arquivo no   navegador, ele não
                     fica com a formatação apenas usando a tag <strong>&lt;code&gt;</strong>, então usamos a tag
                     <strong>&lt;pre&gt;</strong>  para fazer o navegador abrir da forma que escrevemos no arquivo.
-                    <strong>Ex acima, mas agora entre as tags &lt;pre&gt;:</strong>
-                <pre>
-num = int(input('Digite um número:'))
-    if num % 2 == 0:
-        print(f'O número {num} é PAR')
-    else:
-        pront(f'O número {num} é IMPAR')
-    print('Fim do programa')</pre>
+                    <strong>Ex acima, mas agora entre as tags &lt;pre&gt;:</strong></p>
+                <img src="exemplos/expython.png" alt="">
                 <p>isso acontende porque a tag <strong>&lt;pre&gt;</strong> usa a pre-formatação do seu arquivo HTML.</p>
                 <h3>Citações da forma correta:</h3>
                 <h4>Citações simples:</h4>
@@ -133,8 +129,7 @@ num = int(input('Digite um número:'))
                 <p><strong>Ex:</strong>  Estou aprendendo <abbr title="HyperText Markup lánguage">HTML</abbr> e
                     <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
                 Foi feito assim:</p>
-                <pre>Estou aprendendo&lt;abb title="HyperText Markup lánguage"&gt;HTM&lt;
-/abbr&gte&lt;abbr title="Cascading Style Sheets"&gt;CS&lt;/abbr&gt.Estou adorando!</pre>
+                <img src="exemplos/abb.png" alt="abb">
                 <h2>Símbolos especiais:</h2>
                 <h3>Como adicionar:</h3>
                 <p>Muito simples, sempre começa com o 'e comercial' (Que é esse símbolo - &)
@@ -213,12 +208,7 @@ num = int(input('Digite um número:'))
                     <img src="imagens/G.png" alt="imagem flexivel">
                 </picture>
                 <p>Foi feito exatamente assim: </p>
-                <pre>
-&lt;picture>
-    &lt;source media="(max-width: 700px)" srcset="imagens/P.png" type="image/png">
-    &lt;source media="(max-width: 1050px)" srcset="imagens/M.png" type="image/png">
-    &lt;img src="imagens/G.png" alt="imagem flexivel">
-&lt;/picture></pre>
+                <img src="exemplos/picture.png" alt="picture">
                 <p>Olhando para o código acima podemos ver que foi usado a tag <strong>&lt;picture&gt;</strong> e em seguida a tag
                     <strong>&lt;source&gt;</strong>. Mas primeiro coloquei a tag <strong>&lt;img&gt;</strong> com a maior imagem criada 1000 x 1000.
                     Em seguida o <strong><q>visual studio code</q></strong> quando digitamos a iniciais da palavra source vão aparecer algumas
@@ -257,10 +247,7 @@ num = int(input('Digite um número:'))
                 <p>Assim seu áudio será inserido no seu arquivo, mas não vai tocar. Para tocar você pode colocar os parâmetros <strong>autoplay</strong>
                 que vai iniciar o áudio assim que o site for carregado ou o <strong>controls</strong> que mostrará um controle de áudio.
                 Dessa forma:</p>
-                <pre>
-&lt;audio src="audios/audio1.mp3" autoplay></audio>
-
-&lt;audio src="audios/audio1.mp3" controls></audio></pre>
+                <img src="exemplos/audio.png" alt="audio">
                 <audio src="audios/audio1.mp3" controls></audio>
                 <p>Qaundo for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
                     o parâmetro loop faz o seu áudio rainiciar sem parar, é bem comum ser usado quando o áudio é curto. Ex:</p>
@@ -274,23 +261,15 @@ num = int(input('Digite um número:'))
                 <p>Apagamos esse <strong>src</strong> e vamos dar um <strong>enter</strong> entre as tags de abertura e fechamento para colocarmos o
                 <strong>source</strong>.   Dessa forma:</p>
                 <pre>
-&lt;audio>
+                    &lt;audio>
 
-&lt;/audio></pre>
+                    &lt;/audio></pre>
                 <p>E vamos colocar manualmente o <strong>source</strong>. Vimos na parte de imagens no HTML que enquanto estamos digitando   a palavra
                     a no seu <strong>visual studio code</strong>, vão aparecendo várias opções e você irá escolher a opção
                     <strong>source src</strong>. Dessa forma:</p>
-                <pre>
-&lt;audio>
-    &lt;source src="" type="">
-&lt;/audio></pre>
+                <img src="exemplos/audio2.png" alt="2">
                 <p>Agora preencha com os áudios que você converteu e o tipo de cada um. Dessa forma:</p>
-                <pre>
-&lt;audio>
-    &lt;source src="exemplo1.mp3" type="audio/mpeg">
-    &lt;source src="exemplo2.ogg" type="audio/ogg">
-    &lt;source src="exemplo3.wav" type="audio/wav"a
-&lt;/audio></pre>
+                <img src="exemplos/audio3.png" alt="3">
                 <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
                     <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
                     o tipo de midia que irá usar. Clica   no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
@@ -299,14 +278,7 @@ num = int(input('Digite um número:'))
                 <p>Agora que está adicionado os princpais tipos de áudios colocaremos as pré configurações na tag áudio já citadas acima.
                     E se mesmo assim o áudio não for iniciado colocaremos uma forma dele ser baixado. Dessa forma o áudio será apresentado para
                     quem está navegando no site de alguma maneira.</p>
-                <pre>
-&lt;audio controls autoplay loop>
-    &lt;source src="exemplo1.mp3" type="audio/mpeg">
-    &lt;source src="exemplo2.ogg" type="audio/ogg">
-    &lt;source src="exemplo3.wav" type="audio/wav">
-    &lt;p>Infelizmente seu navegador não consegue reproduzir áudio.
-    &lt;a href="exemplo1.mp3"> &lt;/a>Clique aqui para baixar o arquivo MP3&lt;/p>
-&lt;/audio></pre>
+                <img src="exemplos/audio4.png" alt="4">
                 <p>Mais uma dica sobre tamanho de arquivo: Evite usar o tipo WAV de áudio porque mesmo sendo Compatível ele é   muito grande e pode
                     deixar seu site bem pesado.</p>
             </section>
@@ -333,22 +305,10 @@ num = int(input('Digite um número:'))
                 <p>Seu navegador não é Compatível com o vídeo.</a></p>
                 </video>
                 <p>O exemplo acima está da seguinte forma:</p>
-                <pre>
-&lt;video controls>
-    &lt;source src="videos/video1.mp4" type="video/mp4">
-    &lt;source src="videos/video1.ogv" type="video/ogv">
-    &lt;source src="videos/video1.webm" type="video/webm">
-    &lt;p>Seu navegador não é Compatível com o video.</a>
-&lt;/video></pre>
+                <img src="exemplos/video.png" alt="1">
                 <p>Um parâmtro interessante de ser usado quando for colocar vídeos no seu site é o de capa para seu vídeo, pois se não colocar a capa
                     será o primeiro frame do vídeo, que na maioria das vezes não fica legal. O parâmetro é o <strong>poster</strong></p>
-                <pre>
-&lt;video controls poster="imgemdecapa">
-    &lt;source src="videos/video1.mp4" type="video/mp4">
-    &lt;source src="videos/video1.ogv" type="video/ogv">
-    &lt;source src="videos/video1.webm" type="video/webm">
-    &lt;p>Seu navegador não é Compatível com o vídeo.
-&lt;/video></pre>
+                <img src="exemplos/video2.png" alt="2">
                 <video class="videoex" controls poster="imagens/boneco.png">
                     <source src="videos/video1.mp4" type="video/mp4">
                     <source src="videos/video1.ogv" type="video/ogv">
@@ -389,13 +349,7 @@ num = int(input('Digite um número:'))
                     <li>preto</li>
                 </ol>
                 <p>O código fica exatamente assim:</p>
-                <pre>
-&lt;ol&gt;
-    &lt;li&gt;azul&lt;/li&gt;
-    &lt;li&gt;cinza&lt;/li&gt;
-    &lt;li&gt;laranja&lt;/li&gt;
-    &lt;li&gt;preto&lt;/li&gt;
-&lt;/ol&gt;</pre>
+                <img src="exemplos/lista.png" alt="ol">
                 <p>Assim sempre que precisar mudar a precedência da lista é só colocar na posição desejada, que os   números vão
                     mudar automaticamente.</p>
                 <p>Dentro da tag <strong>&lt;ol&gt;</strong> você pode colocar o parâmetro <strong>type</strong>, que vão ter 5 tipos:</p>
@@ -408,13 +362,7 @@ num = int(input('Digite um número:'))
                 <p>São listas que no título já deixa claro, não tem ordem. A tag usada para fazer esse tipo de lista é a
                     <strong>&lt;ul&gt;</strong>.</p>
                 <p>Vai ficar exatamente assim:</p>
-                <pre>
-&lt;ul&gt;
-    &lt;li&gt;azul&lt;/li&gt;
-    &lt;li&gt;cinza&lt;/li&gt;
-    &lt;li&gt;laranja&lt;/li&gt;
-    &lt;li&gt;preto&lt;/li&gt;
-&lt;/ul&gt;</pre>
+                <img src="exemplos/lista2.png" alt="ul">
                 <p>Dentro da tag <strong>&lt;ul&gt;</strong> você  Também pode colocar o parâmetro <strong>type</strong>, que
                     vão ter 3 tipos:</p>
                 <h4>"disc"(que é o padrão):</h4>
@@ -468,15 +416,7 @@ num = int(input('Digite um número:'))
                     <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
                 </dl>
                 <p>Fica como um dicionário, com o termo e a definição. Esse é o exemplo acima:</p>
-                <pre>
-&lt;dl>
-    &lt;dt>HTML&lt;/dt>
-    &lt;dd>Linguagem de marcação para a criação do conteúdo de um site.&lt;/dd>
-    &lt;dt>CSS&lt;/dt>
-    &lt;dd>Linguagem de marcação para a criação do design de um site.&lt;/dd>
-    &lt;dt>jávaScript&lt;/dt>
-    &lt;dd>Linguagem de programação para a criação de interatividade de um site.&lt;/dd>
-&lt;/dl></pre>
+                <img src="exemplos/lista3.png" alt="dl">
             </section>
             <section>
                 <h1>Links:</h1> <hr>
@@ -494,8 +434,8 @@ num = int(input('Digite um número:'))
                 <p>Você Também pode acessar o canal dele: <a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external">
                     Canal gratuito no youtube.</a></p>
                 <p>Esses exemplos foram feitos exatamente assim:</p>
-                <pre>&lt;a href="https://gustavoguanabara.github.io/" target="_blánk" rel="external"> Canal gratuito no youtube.&gt;</pre>
-                <pre>&lt;a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external"> Canal gratuito no youtube.&gt;</pre>
+                <img src="exemplos/linkex.png" alt="1">
+                <img src="exemplos/linkex2.png" alt="2">
                 <h3>Usando links internos:</h3>
                 <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">
                     segunda página</a> Faço isso abrindo   um novo arquivo HTML no <strong>'Visual Studio Code'</strong> na mesma pasta que o
