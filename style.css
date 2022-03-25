@@ -33,6 +33,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -45,7 +46,9 @@ a {
     font-family: var(--subtitulos);
     font-size: 1em;
     padding: 2px 20px;
+    margin-left: 10px;
     transition-duration: 0.5s;
+    
 }
 
 .menu > a:hover {
@@ -56,12 +59,10 @@ a {
 main {
     background-color: white;
     max-width: 900px;
-    min-width: 290px;
-    margin: auto;
+    min-width: 320px;
     padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
     box-shadow: 2px 2px 6px #498e8fa1;
+    margin: auto;
 }
 
 h1 {
@@ -116,35 +117,37 @@ code {
 }
 pre {
     background-color: var(--cor4);
-    padding: 10px;
-    margin: 10px;
+    padding: 10px 3px;
+    margin: 10px 0;
     border-radius: 10px;
-    text-align: center;
+    text-align: justify;
 }
 pre:hover {
     background-color: var(--cor1);
     color: white;
-
+    margin: 10px -10px;
+    border-radius: 0ch;
+    transition-duration: 0.5s;
 }
 img {
     background-color: var(--cor1);
     border-radius: 20px;
+    margin: 20px 0;
     padding: 3px;
-    margin: 10px;
     box-shadow: 1px 2px 5px var(--cor3);
 }
 audio {
 
     background-color: var(--cor1);
     border-radius: 30px;
-    margin: 20px;
+    margin: 20px 0;
     padding: 3px;
     box-shadow: 1px 2px 5px var(--cor3);
 }
 video {
     background-color: var(--cor1);
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px 0;
     padding: 3px;
     box-shadow: 1px 2px 5px var(--cor3);
 }

@@ -106,7 +106,10 @@
                     fica com a formatação apenas usando a tag <strong>&lt;code&gt;</strong>, então usamos a tag
                     <strong>&lt;pre&gt;</strong>  para fazer o navegador abrir da forma que escrevemos no arquivo.
                     <strong>Ex acima, mas agora entre as tags &lt;pre&gt;:</strong></p>
-                <img src="exemplos/expython.png" alt="">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="exemplos/expython.png">
+                    <img src="exemplos/exg.png" alt="">
+                </picture>
                 <p>isso acontende porque a tag <strong>&lt;pre&gt;</strong> usa a pre-formatação do seu arquivo HTML.</p>
                 <h3>Citações da forma correta:</h3>
                 <h4>Citações simples:</h4>
@@ -129,7 +132,8 @@
                 <p><strong>Ex:</strong>  Estou aprendendo <abbr title="HyperText Markup lánguage">HTML</abbr> e
                     <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
                 Foi feito assim:</p>
-                <img src="exemplos/abb.png" alt="abb">
+                <pre>&lt;abb title="HyperText Markup lánguage">HTM&lt;/abbr></pre>
+                <pre>&lt;abbr title="Cascading Style Sheets">CS&lt;/abbr></pre>
                 <h2>Símbolos especiais:</h2>
                 <h3>Como adicionar:</h3>
                 <p>Muito simples, sempre começa com o 'e comercial' (Que é esse símbolo - &)
@@ -169,7 +173,7 @@
                     arquivo HTML é deixar o cursór no meio das aspas ("") src, segurar o <strong>'ctrl'</strong> no   teclado e precionar a teclá
                     <strong>'espaço'</strong>. Assim vao aparecer a lista de todos os arquivos da pasta.</p>
                 <img src="imagens/boneco.png" alt="Exemplo de imagem">
-                <p>Na imagm acima foi feito assim:<pre>&lt;img src="imagens/boneco.png" alt="Exemplo de imagem"&gt;</pre></p>
+                <p>Na imagm acima foi feito assim:<pre>&lt;img src="imagens/boneco.png" alt="Exemplo"&gt;</pre></p>
                 <h3>Direitos autorais:</h3>
                 <p>Usar qualquer midia pode dar algum problema, se não for de usó livre. Essa imagem do exemplo foi tirada do   site
                     <a href="https://www.pexels.com/pt-br/" target="_blánk" rel="external">pexels</a> e tem todos os direitos livres
@@ -208,7 +212,10 @@
                     <img src="imagens/G.png" alt="imagem flexivel">
                 </picture>
                 <p>Foi feito exatamente assim: </p>
-                <img src="exemplos/picture.png" alt="picture">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="exemplos/picture.png" type="image/png">
+                    <img src="exemplos/pictureg.png" alt="maior">
+                </picture>
                 <p>Olhando para o código acima podemos ver que foi usado a tag <strong>&lt;picture&gt;</strong> e em seguida a tag
                     <strong>&lt;source&gt;</strong>. Mas primeiro coloquei a tag <strong>&lt;img&gt;</strong> com a maior imagem criada 1000 x 1000.
                     Em seguida o <strong><q>visual studio code</q></strong> quando digitamos a iniciais da palavra source vão aparecer algumas
@@ -247,9 +254,12 @@
                 <p>Assim seu áudio será inserido no seu arquivo, mas não vai tocar. Para tocar você pode colocar os parâmetros <strong>autoplay</strong>
                 que vai iniciar o áudio assim que o site for carregado ou o <strong>controls</strong> que mostrará um controle de áudio.
                 Dessa forma:</p>
-                <img src="exemplos/audio.png" alt="audio">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="exemplos/audio.png">
+                    <img src="exemplos/audiog.png" alt="audio">
+                </picture> <br>
                 <audio src="audios/audio1.mp3" controls></audio>
-                <p>Qaundo for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
+                <p>Quando for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
                     o parâmetro loop faz o seu áudio rainiciar sem parar, é bem comum ser usado quando o áudio é curto. Ex:</p>
                 <pre>&lt;audio src="áudios/áudio1.mp3" autoplay loop></audio></pre>
                 <p>Dependendo do navegador o áudio não irá funcionar, mas temos como resolver esse problema usando autros formatos de áudio.
@@ -259,17 +269,10 @@
                     ela se auto preenche com o <strong>src</strong>.</p>
                 <pre>&lt;audio src="">&lt;/audio></pre>
                 <p>Apagamos esse <strong>src</strong> e vamos dar um <strong>enter</strong> entre as tags de abertura e fechamento para colocarmos o
-                <strong>source</strong>.   Dessa forma:</p>
-                <pre>
-                    &lt;audio>
-
-                    &lt;/audio></pre>
-                <p>E vamos colocar manualmente o <strong>source</strong>. Vimos na parte de imagens no HTML que enquanto estamos digitando   a palavra
-                    a no seu <strong>visual studio code</strong>, vão aparecendo várias opções e você irá escolher a opção
-                    <strong>source src</strong>. Dessa forma:</p>
-                <img src="exemplos/audio2.png" alt="2">
-                <p>Agora preencha com os áudios que você converteu e o tipo de cada um. Dessa forma:</p>
-                <img src="exemplos/audio3.png" alt="3">
+                <strong>source</strong>. Vamos colocar manualmente o <strong>source</strong>. Vimos na parte de imagens no HTML que enquanto estamos digitando a palavra
+                    source no seu <strong>visual studio code</strong>, vão aparecendo várias opções e você irá escolher a opção
+                    <strong>source src</strong>. </p>
+                <p>Agora preencha com os áudios que você converteu e o tipo de cada um.</p>
                 <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
                     <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
                     o tipo de midia que irá usar. Clica   no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
@@ -278,7 +281,6 @@
                 <p>Agora que está adicionado os princpais tipos de áudios colocaremos as pré configurações na tag áudio já citadas acima.
                     E se mesmo assim o áudio não for iniciado colocaremos uma forma dele ser baixado. Dessa forma o áudio será apresentado para
                     quem está navegando no site de alguma maneira.</p>
-                <img src="exemplos/audio4.png" alt="4">
                 <p>Mais uma dica sobre tamanho de arquivo: Evite usar o tipo WAV de áudio porque mesmo sendo Compatível ele é   muito grande e pode
                     deixar seu site bem pesado.</p>
             </section>
@@ -305,10 +307,16 @@
                 <p>Seu navegador não é Compatível com o vídeo.</a></p>
                 </video>
                 <p>O exemplo acima está da seguinte forma:</p>
-                <img src="exemplos/video.png" alt="1">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="exemplos/video.png">
+                    <img src="exemplos/videog.png" alt="audio">
+                </picture>
                 <p>Um parâmtro interessante de ser usado quando for colocar vídeos no seu site é o de capa para seu vídeo, pois se não colocar a capa
                     será o primeiro frame do vídeo, que na maioria das vezes não fica legal. O parâmetro é o <strong>poster</strong></p>
-                <img src="exemplos/video2.png" alt="2">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="exemplos/video2.png">
+                        <img src="exemplos/video2g.png" alt="audio">
+                    </picture> <br>
                 <video class="videoex" controls poster="imagens/boneco.png">
                     <source src="videos/video1.mp4" type="video/mp4">
                     <source src="videos/video1.ogv" type="video/ogv">
@@ -349,7 +357,10 @@
                     <li>preto</li>
                 </ol>
                 <p>O código fica exatamente assim:</p>
-                <img src="exemplos/lista.png" alt="ol">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="exemplos/lista.png">
+                    <img src="exemplos/olg.png" alt="ul">
+                </picture>
                 <p>Assim sempre que precisar mudar a precedência da lista é só colocar na posição desejada, que os   números vão
                     mudar automaticamente.</p>
                 <p>Dentro da tag <strong>&lt;ol&gt;</strong> você pode colocar o parâmetro <strong>type</strong>, que vão ter 5 tipos:</p>
@@ -362,7 +373,10 @@
                 <p>São listas que no título já deixa claro, não tem ordem. A tag usada para fazer esse tipo de lista é a
                     <strong>&lt;ul&gt;</strong>.</p>
                 <p>Vai ficar exatamente assim:</p>
-                <img src="exemplos/lista2.png" alt="ul">
+                <picture>
+                    <source media="(max-width: 700px)" srcset="exemplos/lista2.png">
+                    <img src="exemplos/ulg.png" alt="ul">
+                </picture>
                 <p>Dentro da tag <strong>&lt;ul&gt;</strong> você  Também pode colocar o parâmetro <strong>type</strong>, que
                     vão ter 3 tipos:</p>
                 <h4>"disc"(que é o padrão):</h4>
@@ -415,8 +429,7 @@
                     <dt>jávaScript</dt>
                     <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
                 </dl>
-                <p>Fica como um dicionário, com o termo e a definição. Esse é o exemplo acima:</p>
-                <img src="exemplos/lista3.png" alt="dl">
+                <p>Fica como um dicionário, com o termo e a definição.</p>
             </section>
             <section>
                 <h1>Links:</h1> <hr>
@@ -433,9 +446,6 @@
                     target="_blánk" rel="external"> Repositório público no GitHub.</a></p>
                 <p>Você Também pode acessar o canal dele: <a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external">
                     Canal gratuito no youtube.</a></p>
-                <p>Esses exemplos foram feitos exatamente assim:</p>
-                <img src="exemplos/linkex.png" alt="1">
-                <img src="exemplos/linkex2.png" alt="2">
                 <h3>Usando links internos:</h3>
                 <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">
                     segunda página</a> Faço isso abrindo   um novo arquivo HTML no <strong>'Visual Studio Code'</strong> na mesma pasta que o
