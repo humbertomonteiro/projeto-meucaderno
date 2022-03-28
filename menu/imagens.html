@@ -1,0 +1,112 @@
+
+    <!DOCTYPE html>
+    <html láng="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <title>Aprendendo HTML e CSS</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a id="logo" href="../index.html">My Notebook</a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu/imagens.html">Imagens</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="css.html">Css</a></li>
+        </ul>
+        </header>
+        <main>
+            <section>               
+                <h1>Imagens no HTML:</h1><hr>
+                <h2>Adicionar imagens:</h2>
+                <h3>tag IMG:</h3>
+                <p>Para colocar imagens você precisa baixar uma imagem  ou escolher alguma imagem do seu computador, e colocar
+                    junto da pasta que está seu arquivo HTML (Com um nome fácil de preferência). </p>
+                <p>Feito isso é só usar a tag &lt;img&gt;  Essa tag é assim:<pre> &lt;img src="" alt=""&gt;</pre></p>
+                <p>Você vai colocar o nome da imagem com '.png'  entre os primerios
+                    parênteses ("") (png é um dos melhores formatos que existem)  e entre o   segundo parêntesis ("") vai usar um parâmetro.</p>
+                <p>Uma forma fácil de selecionar qualquer imagem, link ou arquivo que você adicionou na sua pasta, junto   com seu
+                    arquivo HTML é deixar o cursór no meio das aspas ("") src, segurar o <strong>'ctrl'</strong> no   teclado e precionar a teclá
+                    <strong>'espaço'</strong>. Assim vao aparecer a lista de todos os arquivos da pasta.</p>
+                <img src="../imagens/boneco.png" alt="Exemplo">
+                <p>Na imagm acima foi feito assim:<pre>&lt;img src="imagens/boneco.png" alt="Exemplo"&gt;</pre></p>
+                <h3>Direitos autorais:</h3>
+                <p>Usar qualquer midia pode dar algum problema, se não for de usó livre. Essa imagem do exemplo foi tirada do   site
+                    <a href="https://www.pexels.com/pt-br/" target="_blánk" rel="external">pexels</a> e tem todos os direitos livres
+                    para usó. Usó de midias com direitos autorais podem ser bastante   problematicos, os donos do produto podem te processar, pedir que
+                    tire seu site do ar, entre outras coisas.</p>
+                <h3>Tamanho de imagens:</h3>
+                <p>Existem vários tipos de imagens, por exemplo o <strong>.jpg</strong> o diferencial desse
+                    formato é que tem uma auta   compactação. O <strong>.png</strong> tem uma compactação um pouco menor mas permite
+                    transparência. Também tem o   farmato <strong>.gif</strong> com baixa compactação, mas permite animacão e transparência.
+                <p>Tamanho de imagens é um assunto muito importante, o grande professór Guanabara   falou: <q>
+                    Uma imagem de largura de <em>1500 megas</em> é mais que o suficiente para usar em sites.</q></p>
+                <p><strong>Obs:</strong> Quando editar o tamanho de imagens você precisa redimencionar proporcionalmente o tamanho  e largura.
+                    Normalmente imagens usadas em sites tem <strong>600 megas</strong> de tamanho, que é um tamanho ótimo.</p>
+                <p>Então é bom sempre deixar seus arquivos de imagens sempre com tamanhos pequenos,   para não ser um site tão pesado.</p>
+                <h3>Carregando imagens:</h3>
+                <p>Podemos carregar imagens da própria pasta que fica seu arquivo HTML,como no exemplo   que você viu, mas Também tem outras
+                    formas.  Por exemplo, podemos fazer uma pasta de imagens dentro da própria pasta que estar o arquivo   HTML.  Fazendo
+                    isso não vai funcionar só colocar o nome da imagem, vai ser mais fácil usar a   forma de pesquisar os arquivos segurando
+                    <strong>'ctrl'</strong> e precionando a teclá <strong>'espaço'</strong>.</p>
+                <p>Também dá para usar um 'link', você busca em seu navegador a imagemque quer, então clica   com o segundo botão do mouse
+                    e clica em 'copiar endereço da imagem'. Usa esse link copiado   no lugar onde colocaria o nome da imagem na tag
+                    <strong>&lt;img&gt;</strong> e essa imagem vai ser mostrada   buscando direto da internet. Essa imagem vem de outro servidor,
+                    então se o servidor cair a   imagem não vai ser mostrada. Será mostrado apenas o parâmetro posto na tag.</p>
+                <h2>Imagens que se adaptam sózinhas:</h2>
+                <h3>Compatível com todos os dispositivos:</h3>
+                <p>Hoje se usam muitos dispositivos para navegar na internet. Celuláres, teblets e computadores são   exemplos. A diferença deles são o
+                    tamanho de cada um, e para ter uma melhor foma de navegar em um site é importante ter imagens que se adaptem a cada tamanho. Como
+                    exemplo fiz três imagens de tamanhos diferentes, uma de 300 x 300, outra de 700 x 700 e a última 850 x 850. Vamos usar a tag
+                    <strong>&lt;picture&gt;</strong> e dentro vamos usar as tags de imagem <strong>&lt;img&gt;</strong>. Usamos a tag picture para informar
+                    que vai ter imagem nesse lugar do arquivo. E essa tag Também permite usar várias fontes de imagens, precisamos dessa função
+                    pois precisaremos que a imagem mude de acordo com o tamanho. Nesse   exemplo, como falado, vamos usar três tamanhos. A imagem abaixo
+                    é adaptável. Pode aumentar e   diminuir seu navegador para testar.</p>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="../imagens/P.png" type="image/png">
+                    <source media="(max-width: 850px)" srcset="../imagens/M.png" type="image/png">
+                    <img src="../imagens/G.png" alt="imagem flexivel">
+                </picture>
+                <p>Olhando para o código acima podemos ver que foi usado a tag <strong>&lt;picture&gt;</strong> e em seguida a tag
+                    <strong>&lt;source&gt;</strong>. Mas primeiro coloquei a tag <strong>&lt;img&gt;</strong> com a maior imagem criada 1000 x 1000.
+                    Em seguida o <strong><q>visual studio code</q></strong> quando digitamos a iniciais da palavra source vão aparecer algumas
+                    opções, você irá escolher a <strong><q> source media type</q></strong>, quando selecionar essa opção, vai auto preencher da
+                    seguinte forma:</p>
+                <pre>&lt;source media="(min-width: )" srcset="" type="image/"></pre>
+                <p>Podemos observar que auto preenche com o <code><q>min-width</q></code>. Foi auterado para o máximo que é a maneira   que acho mais
+                    fácil de usar: <code><q>max-width</q></code>, logo em seguida preencha o tamamho máximo permitido para que não tenha barra de
+                    rolagem na sua imagem (Nesse caso foi de 1050px). No próximo parâmetro você colocará sua imagem média. Infelizmente não consegui
+                    buscar com o <strong>ctrl espaço</strong>, mas já foi mostrado como faz para colocar imagens. E por ultimo, no parâmetro type
+                    você vai colocar o tipo de imagem que foi usado.(No caso foi usado o png)</p>
+                <p>Observe que o source para troca de imagem de grande para média foi em cima da tag <strong>&lt;img&gt;</strong>. O source da imagem
+                    pequena será em cima do source anterior, como demonstrado no exemplo. Será da mesma forma,   mas com o whith máximo 700px e a imagem
+                    que sera posta será a pequena que foi renomeada assim: p.png. E está na pasta imagens.</p>
+                <h2>Fivecon:</h2>
+                <h3>Como mudar o fivecon do seu site:</h3>
+                <p>O formato da imagem tem que ser <strong>'.ico'</strong> , você pode achar várias imagens nesse formatos na web. O
+                    <a target="_blank" href="https://iconarchive.com/">iconarchive.com</a> é um site que tem uma quantidade enorme de ícones 
+                    para escolher. Se você for criativo e paciente, dá pra você mesmo fazer seu ícone do seu site. No site 
+                    <a target="_blank" href="https://www.favicon.cc/">favicon.cc</a> dá pra fazer seu ícone, é um pouco trabalhoso, 
+                    mas sai da forma que desejar. Tem mais uma forma de fazer seu ícone, no site 
+                    <a target="_blank" href="https://favicon.io/">fivecon.io</a>. Nesse site dá pra você fazer um texto, 
+                    uma imagem ou até mesmo um emoji você transformar em um ícone.</p>
+                <p>Para adicionar seu ícone basta ir na cabeça do HTML (Na tag <strong>&lt;head&gt;</strong>), em cima da tag
+                    <strong>&lt;tittle&gt;</strong> escrava 'link' nessa hora vai aparecer uma lista com vários tipos de links
+                    que podem ser usados. Escolha a opção <strong>'favicon'</strong>, vai preencher automaticamente o comando,
+                    agora é só apagar dessa linha autopreenchida o que está dentro das aspas <strong>'fivecon.ico'</strong>, então é só apartar
+                    <strong>'ctrl'</strong><strong>'espaço'</strong> no seu teclado e usar o ícone que quiser.</p>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Desenvolvido por: Humberto Monteiro. <a class="baixo" target="_blank" href="https://www.instagram.com/humberto.fh/">instagran</a></p>
+        </footer>
+        <script src="../script.js"></script>

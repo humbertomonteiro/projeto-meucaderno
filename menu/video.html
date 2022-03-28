@@ -1,0 +1,73 @@
+
+    <!DOCTYPE html>
+    <html láng="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <title>Aprendendo HTML e CSS</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a id="logo" href="../index.html">My Notebook</a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu/imagens.html">Imagens</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="css.html">Css</a></li>
+        </ul>
+        </header>
+        <main>
+            <section>                
+                <h1>Vídeo no HTML</h1><hr>
+                <h2>Adicionando vídeos:</h2>
+                <h3>Hospedados localmente:</h3>
+                <p>Os principais formatos de vídeo para serem usados são: MP4 (.mp4, .m4v), WEBM(.webm) e o OGV(.ogv).
+                Para mostrar o vídeo no arquivo basta usar a tag <strong>&lt;video&gt;</strong> que no visual studio code já vem auto preenchido
+                com <strong>src</strong>. exatamente assim:</p>
+                <pre>&lt;video src="exemplovideo.mp4">&lt;/video></pre>
+                <p>Temos o mesmo problema com direitos autorais com os vídeos, então vou pegar um vídeo sem direitos autorais no já citado
+                    <a href="https://www.pexels.com/pt-br/videos/" target="_blánk" rel="external">pexels</a> e usar aqui como exemplo. Se não for usado
+                    com o parêmtro controls ficará exatamente assim:</p>
+                <video src="../videos/video1.mp4" width="200"></video>
+                <p>Assim fica com o parâmetro controls:</p>
+                <video src="../videos/video1.mp4" width="200" controls></video>
+                <p>Assim nós temos o mesmo problema com a questão de compatibilidade do seu navegador com o formato do vídeo. Para resolver faremos
+                    da mesma forma que no áudio, com todos os formatos.</p>
+                <video controls >
+                <source src="exvideo1.mp4" type="video/mp4">
+                <source src="exvideo2.ogv" type="video/ogv">
+                <source src="exvideo3.webm" type="video/webm">
+                <p>Seu navegador não é Compatível com o vídeo.</a></p>
+                </video>
+                <p>Um parâmtro interessante de ser usado quando for colocar vídeos no seu site é o de capa para seu vídeo, pois se não colocar a capa
+                    será o primeiro frame do vídeo, que na maioria das vezes não fica legal. O parâmetro é o <strong>poster</strong></p>
+                <video class="videoex" controls poster="../imagens/boneco.png">
+                    <source src="../videos/video1.mp4" type="video/mp4">
+                    <source src="../videos/video1.ogv" type="video/ogv">
+                    <source src="../videos/video1.webm" type="video/webm">
+                    <p>Seu navegador não é Compatível com o vídeo.</p>
+                </video>
+                <p>Estava com preguiça de fazer uma capa de exemplo, então usei a imagem que já tinha usado como exemplo. Os parâmetros de autoplay
+                    e loop Também funcionam com vídeos.</p>
+                <h3>Incorporar vídeos com links externos:</h3>
+                <p>Vídeos da internet são muito simples de serem incorporados, você vai no vídeo que desejá por no seu site e   clica em compartilhar,
+                    depois em incorporar se o dono do vídeo deixou liberado vai te gerar um link, copia   o link e cola no seu arquivo html.
+                    Assista o vídeo do mestre guanabara e você entenderar tudo.</p>
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p>No vídeo ele explica que o mais reconmendado é usar o youtube como base do seus vídeos, pois deixar tudo   hopedado em um servidor pago,
+                    vai te gerar muito gasto e trabalho. </p>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Desenvolvido por: Humberto Monteiro. <a class="baixo" target="_blank" href="https://www.instagram.com/humberto.fh/">instagran</a></p>
+        </footer>
+        <script src="../script.js"></script>

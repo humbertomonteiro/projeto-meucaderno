@@ -27,33 +27,40 @@ a {
     color: white;
     text-decoration: none;
 }
-.inicio {
+
+.cabecalho {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 5px;
     flex-wrap: wrap;
+    align-items: center ;
 }
 
-.logo {
-    font-family: var(--titulos);
-    font-size: 2.7em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);  
+#logo {
+    font-size: 2.5em;
+    padding: 5px;
+    margin: 10px;
+    font-family: var(--titulos); 
 }
 
-.menu > a {
-    font-family: var(--subtitulos);
-    font-size: 1em;
-    padding: 2px 20px;
-    margin-left: 10px;
-    transition-duration: 0.5s;
-    
-}
-
-.menu > a:hover {
+#logo:hover {
     background-color: var(--cor3);
-    padding: 2px 20px;
+    border-radius: 10px;
+}
+
+.menu {
+    font-family: var(--subtitulos);
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu > li > a {
+    padding: 0 8px;
+}
+
+a:hover {
+    background-color: var(--cor3);
     border-radius: 5px;
 }
 main {
@@ -68,14 +75,14 @@ main {
 h1 {
     font-family: var(--titulos);
     color: var(--cor1);
-    font-size: 2.3em;
+    font-size: 2em;
     padding: 10px 0px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h2 {
     font-family: var(--titulos);
     color: #044B4C;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding: 10px 0px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
@@ -83,12 +90,12 @@ h3 {
     padding: 3px 0px;
     font-family: var(--subtitulos);
     color: var(--cor2);
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 h4 {
     color: var(--cor3);
     font-family: var(--subtitulos);
-    font-size: 1.3em;
+    font-size: 1em;
     text-decoration: underline;
     margin: 5px;
 }
@@ -192,7 +199,7 @@ p > a:hover {
 }
 strong {
     font-family: var(--forte);
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bolder;
     color: var(--cor1);
 }

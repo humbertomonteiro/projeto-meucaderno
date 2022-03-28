@@ -1,0 +1,79 @@
+
+    <!DOCTYPE html>
+    <html láng="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <title>Aprendendo HTML e CSS</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a id="logo" href="../index.html">My Notebook</a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu/imagens.html">Imagens</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="css.html">Css</a></li>
+        </ul>
+        </header>
+        <main>
+            <section>
+                <h1>Links:</h1> <hr>
+                <h2>Tipos de links</h2>
+                <h3>Links externos:</h3>
+                <p>Você pode usar links usando a tag <strong>&lt;a&gt;</strong>. Vai aparecer a referência, da seguinte forma:</p>
+                <p><strong>&lt;a href="e aqui você coloca o link desejádo"</strong>. É recomendado que depois da referência usar
+                    <strong>target="_blánk" rel="external"</strong> pois quando clicar no link, o mesmo irá se sobrepor ao seu,
+                    então o primeiro parâmetro vai fazer abrir o link numa outra aba do navegar. Caso não use quem está navegando
+                    no seu site, quando clicar no link dificilmente valtarão para o seu site. O outro parâmetro "rel" é usado como
+                    uma referência para o navegador, indica como você quiser para onde deve ser o próximo passo a ser seguido. O
+                    navegador pade dar a "rel" caso não coloque, então é muito importante o usó desse parâmetro.    </p>
+                <p>Aqui vai o exemplo de link, esse é o site do meu amigo Guanabara: <a href="https://gustavoguanabara.github.io/"
+                    target="_blánk" rel="external"> Repositório público no GitHub.</a></p>
+                <p>Você Também pode acessar o canal dele: <a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external">
+                    Canal gratuito no youtube.</a></p>
+                <h3>Usando links internos:</h3>
+                <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">
+                    segunda página</a> Faço isso abrindo   um novo arquivo HTML no <strong>'Visual Studio Code'</strong> na mesma pasta que o
+                    arquivo atual. Igual como os links externos,   basta usar a tag <strong>&lt;a&gt;</strong> e colocar a url do seu novo arquivo.
+                    Uma forma mais fácil de fazer isso é usando o nome do arquivo que você criou. No link da minha segunda página foi feito assim:</p>
+                <pre>&lt;a href="pag002.html" rel="next"> segunda Página.&gt;</pre>
+                <p>Também pode criar um novo arquivo em uma pasta diferente, mas não poderá simplesmente colocar o nome do   arquivorecém  criado,
+                    como no exemplo anterior, pois dará erro. Para resolver esse erro basta usar o atalho <strong>'ctrl'</strong> <strong>'espaço'
+                    </strong> que vão aparecer todos os arquivos e pastas que você criou. Busque o arquivo abrindo as pastas e selecione   seu
+                    link para funcionar.</p>
+                <p>Para entender melhor, fiz a uma pasta com o nome <strong>'maispg'</strong> e criei a <strong>'pag003.html'</strong>.
+                    Agora veja como ficou: <pre>&lt;a href="maispg/pag003.html">Mais páginas.&gt;</pre>Fica com o nome da pasta
+                    antes do nome do arquivo, mostrando o caminho para o sistema achar o arquivo solicitado.</p>
+                <p>Dentro da página 3 vai ter uma dica sobre usar links internos.
+                <a href="maispg/pag003.html">Terceira página.</a></p>
+                <h3>Links para download:</h3>
+                <p>Fazer links para dawnload de PDF é muito simples, usa-se a tag <strong>&lt;a&gt;</strong> Também, mas possa ser que seu navegador
+                    não baixe seu arquivo e apenas o mostre, para baixar você pode clicar no segundo botão do mouse e baixar link. Pode Também
+                    tentar usar o parâmetro download com o nome do arquivo que quer baixar, se não funcionar tem mais uma configuração, o parâmetro type
+                    que usa <strong>application/pdf</strong> para mídia em pdf.</p>
+                <p>Vou exemplificar com o PDF do <a href="pdf/pdfdelinks.pdf" download="pdfdelinks.pdf" type="application/pdf">cursó em video</a> para
+                    download, que foi feito exatamene assim: <pre>&lt;a href="pdf/pdfdelinks.pdf" download="pdfdelinks.pdf" type="application/pdf"></pre></p>
+                <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
+                    <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
+                    o tipo de mídia que irá usar. CLica no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
+                    busca e é só buscar o tipo de arquivo que está usando clicando no <strong><q>enter</q></strong>. Obs: Para navegar no site
+                    em busca do que você quer, depois que pesquisou o tipo do arquivo, basta ficar clicando no enter até achar.</p>
+                <p>Você Também pode compactar seu PDF em ZIP e usar as seguintes configurações nos parâmetros já citados:
+                    <pre>download="o nome do arquivo zipado" type="application/zip"</pre>Dessa forma o seu navegador Também vai baixar o arquivo
+                    do link.</p>
+            </section>
+        </main>
+
+
+
+        <footer>
+            <p>Desenvolvido por: Humberto Monteiro. <a class="baixo" target="_blank" href="https://www.instagram.com/humberto.fh/">instagran</a></p>
+        </footer>
+        <script src="../script.js"></script>

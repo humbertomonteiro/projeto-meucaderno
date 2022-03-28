@@ -1,0 +1,66 @@
+
+    <!DOCTYPE html>
+    <html láng="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <title>Aprendendo HTML e CSS</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a id="logo" href="../index.html">My Notebook</a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="css.html">Css</a></li>
+        </ul>
+        </header>
+        <main>
+            <section>
+                <h1>Áudio no HTML:</h1><hr>
+                <h2>Usar áudio:</h2>
+                <h3>Como adicionar:</h3>
+                <p>Podemos adicionar áudios no nosso site também, usando a tag <strong>&lt;audio&gt;</strong>. Aqui vai o exemplo:</p>
+                <pre>&lt;audio src="exemplodeáudio.mp3"></áudio></pre>
+                <p>Assim seu áudio será inserido no seu arquivo, mas não vai tocar. Para tocar você pode colocar os parâmetros <strong>autoplay</strong>
+                que vai iniciar o áudio assim que o site for carregado ou o <strong>controls</strong> que mostrará um controle de áudio.
+                <audio src="../audios/audio1.mp3" controls></audio>
+                <p>Quando for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
+                    o parâmetro loop faz o seu áudio rainiciar sem parar, é bem comum ser usado quando o áudio é curto. Ex:</p>
+                <pre>&lt;audio src="áudios/áudio1.mp3" autoplay loop></audio></pre>
+                <p>Dependendo do navegador o áudio não irá funcionar, mas temos como resolver esse problema usando autros formatos de áudio.
+                    Temos os formatos <strong>OGG</strong>, <strong>WAV</strong> e o que usamos de exemplo <strong>MP3</strong>.
+                    Você converte o áudio para esses três tipos e coloca no seu arquivo. Assim, se o navegardor não for conpativel com um, será com
+                    o outro. Para colocar os três formatos temos que usar o <strong>type</strong>. Quando usamos a tag <strong>&lt;audio&gt;</strong>
+                    ela se auto preenche com o <strong>src</strong>.</p>
+                <pre>&lt;audio src="">&lt;/audio></pre>
+                <p>Apagamos esse <strong>src</strong> e vamos dar um <strong>enter</strong> entre as tags de abertura e fechamento para colocarmos o
+                <strong>source</strong>. Vamos colocar manualmente o <strong>source</strong>. Vimos na parte de imagens no HTML que enquanto estamos digitando a palavra
+                    source no seu <strong>visual studio code</strong>, vão aparecendo várias opções e você irá escolher a opção
+                    <strong>source src</strong>. </p>
+                <p>Agora preencha com os áudios que você converteu e o tipo de cada um.</p>
+                <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
+                    <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
+                    o tipo de midia que irá usar. Clica   no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
+                    busca e é só buscar o tipo de arquivo que está   usando clicando no <strong><q>enter</q></strong>. Obs: Para navegar no site
+                    em busca do que você quer, depois que pesquisou o tipo do   arquivo, basta ficar clicando no enter até achar.</p>
+                <p>Agora que está adicionado os princpais tipos de áudios colocaremos as pré configurações na tag áudio já citadas acima.
+                    E se mesmo assim o áudio não for iniciado colocaremos uma forma dele ser baixado. Dessa forma o áudio será apresentado para
+                    quem está navegando no site de alguma maneira.</p>
+                <p>Mais uma dica sobre tamanho de arquivo: Evite usar o tipo WAV de áudio porque mesmo sendo Compatível ele é   muito grande e pode
+                    deixar seu site bem pesado.</p>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Desenvolvido por: Humberto Monteiro. <a class="baixo" target="_blank" href="https://www.instagram.com/humberto.fh/">instagran</a></p>
+        </footer>
+        <script src="../script.js"></script>

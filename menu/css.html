@@ -1,0 +1,79 @@
+
+    <!DOCTYPE html>
+    <html láng="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <title>Aprendendo HTML e CSS</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a id="logo" href="../index.html">My Notebook</a>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu/imagens.html">Imagens</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="listas.html">Listas</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="css.html">Css</a></li>
+        </ul>
+        </header>
+        <main>
+            <section>               
+                <h1>CSS básico:</h1><hr>
+                <h2>Três formas de usar o css:</h2>
+                <h3>Estilo inline:</h3>
+                <p>É o menos recomendado porque dá muito trabalho e é pouco produtivo. Nessa forma você vai mudar o estilo na própria tag.
+                    Para usar exemplos mais faceis de serem entendidos, vamos colocar em páginas diferentes para vermos como ficam as mudanças.
+                    No primeiro exemplo vamos na tag <strong>&lt;body&gt;</strong> e dentro dela vamos colocar um parâmetro style
+                <a href="maispg/cssinline1.html">Nesse link</a> </p>
+                <h3>Estilos locais ou internos:</h3>
+                <p>Aqui vamos usar uma forma bem mais eficaz de mudar o estilo do seu site. Na cabeça do seu arquivo html vamos usar a tag
+                    <strong>&lt;body&gt;</strong>. Como no exemplo anterior faremos isso em uma  <a href="maispg/csslocais.html">página nova</a>.</p>
+                <h3>Estilos externos:</h3>
+                <p>Como comentado na página do exemplo de estilos locais, o CSS usa muitas linhas para deixar seu site bonito. E seu arquivo   HTML pode
+                    ser bem grande, Nesse caso é melhor usar o estilo externo para ficar organizado. O estilo externo também serve quando você tem
+                    vários sites e o estilo são bem parecidos.</p>
+                <p>vamos entender como funciona, no lugar de colocarmos uma tag style na cabeça do arquivo, nos vamos criar um link de css.
+                    Você só precisa ir no mesmo lugar onde criamos a tag style escrever link e vão aperecer várias opções, escolha o link css.
+                    vai auto preencher da seguinte forma: </p>
+                <pre>&lt;link rel="stylesheet" href="style.css"></pre>
+                <p>Você pode tentar entrar, mas ainda não vai funcionar. Para funcionar você terá que criar esse link,. Precisa apenas segurar o botão
+                    <strong>crtl</strong> e clicar em cima do link. Nessa hora vai aparecer uma notificação que o link não existe, agora basta clicar em
+                    criar link.</p>
+                <p>Agora tudo que você estava fazendo na cabeça do seu arquivo poderá ser feito em outro arquivo separado.</p>
+                <h2>Medidas:</h2>
+                <h3>Medidas absolutas e relativas:</h3>
+                <p><strong><ins>cm</ins></strong> (centimetros), <strong><ins>mm</ins></strong> (milimetros), <strong><ins>in</ins></strong> (polegada),
+                    <strong><ins>px</ins></strong> (pixel), <strong><ins>pt</ins></strong> (ponto), <strong><ins>pc</ins></strong>
+                    (paica). São as medidas absolutas.</p>
+                <p>E <strong><ins>em</ins></strong> (Medida relativa ao tamanho M da fonte), <strong><ins>ex</ins></strong>
+                    (Medida relativa ao tamanho x da fonte), <strong><ins>rem</ins></strong>  (Medida Também ralativa ao M, mas considarando o que
+                    está no CSS), <strong><ins>vw</ins></strong> (Medida relativa a largura da tela do dispositivo usasdo), <strong><ins>vh</ins></strong>
+                    (Medida relativa a altura da tela do dispositivo usado), <strong><ins>%</ins></strong> (Medida relativa a porcentagem).
+                    São as medidas relativas.</p>
+                <h4>dica:</h4>
+                <p>É recomendado usar as medidas <strong>em</strong> e <strong>px</strong>.</p>
+                <h2>Primeiras formatações:</h2>
+                <h3>Texto:</h3>
+                <p><strong>font-family</strong> (serve para mudar a fonte das letras); <strong>font-size</strong> (serve para mudar o tamanho da fonte);
+                    <strong>font-weigth</strong> (serve para mudar pesó da fonte); <strong>font-style</strong> (serve para colocar em Itálico);
+                    <strong>text-decoration</strong> (serve para colocar sublinhado usando o underline.)</p>
+                <h3>Mais opções de fontes:</h3>
+                <p>Para vê como se colocam no seu arquivo HTML basta assistir esse video do Guanabara, que você irá entender tranquilámente.</p>
+                <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3YIXnxA1kqg?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <p><a href="https://fonts.google.com/">Google fonts</a> você pode achar muitas fontes gratuitas.
+                <a href="https://www.dafont.com/pt/">Da fonte</a> É outro site que tem muitas fontes.</p>
+            </section>
+        </main>
+
+
+
+        <footer>
+            <p>Desenvolvido por: Humberto Monteiro. <a class="baixo" target="_blank" href="https://www.instagram.com/humberto.fh/">instagran</a></p>
+        </footer>
+        <script src="../script.js"></script>
