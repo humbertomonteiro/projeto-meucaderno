@@ -5,37 +5,37 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
         <title>Aprendendo HTML e CSS</title>
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-        <header class="cabecalho">
+        <header id="audio">
             <a id="logo" href="../index.html">My Notebook</a>
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="imagens.html">Imagens</a></li>
-            <li><a href="audio.html">Audio</a></li>
+            <li class="audio"><a href="audio.html">Audio</a></li>
             <li><a href="video.html">Video</a></li>
             <li><a href="listas.html">Listas</a></li>
             <li><a href="links.html">Links</a></li>
             <li><a href="css.html">Css</a></li>
         </ul>
         </header>
+        <div id="espaco"></div>
         <main>
             <section>
                 <h1>Áudio no HTML:</h1><hr>
                 <h2>Usar áudio:</h2>
                 <h3>Como adicionar:</h3>
                 <p>Podemos adicionar áudios no nosso site também, usando a tag <strong>&lt;audio&gt;</strong>. Aqui vai o exemplo:</p>
-                <pre>&lt;audio src="exemplodeáudio.mp3"></áudio></pre>
+                <pre>&lt;audio src="exemplodeaudio.mp3"></áudio></pre>
                 <p>Assim seu áudio será inserido no seu arquivo, mas não vai tocar. Para tocar você pode colocar os parâmetros <strong>autoplay</strong>
                 que vai iniciar o áudio assim que o site for carregado ou o <strong>controls</strong> que mostrará um controle de áudio.
                 <audio src="../audios/audio1.mp3" controls></audio>
                 <p>Quando for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
                     o parâmetro loop faz o seu áudio rainiciar sem parar, é bem comum ser usado quando o áudio é curto. Ex:</p>
-                <pre>&lt;audio src="áudios/áudio1.mp3" autoplay loop></audio></pre>
-                <p>Dependendo do navegador o áudio não irá funcionar, mas temos como resolver esse problema usando autros formatos de áudio.
+                <p>Dependendo do navegador o audio não ira funcionar, mas temos como resolver esse problema usando autros formatos de áudio.
                     Temos os formatos <strong>OGG</strong>, <strong>WAV</strong> e o que usamos de exemplo <strong>MP3</strong>.
                     Você converte o áudio para esses três tipos e coloca no seu arquivo. Assim, se o navegardor não for conpativel com um, será com
                     o outro. Para colocar os três formatos temos que usar o <strong>type</strong>. Quando usamos a tag <strong>&lt;audio&gt;</strong>

@@ -14,6 +14,19 @@
     --subtitulos: 'El Messiri', sans-serif;
     --forte: 'Mukta', sans-serif;
 }
+
+@keyframes logo1 {
+    from {
+        color: var(--cor3);
+        right: 150px;
+        border-radius: 300px;
+
+    } to {
+        right: 0;
+        padding: 5px;
+    }
+
+}
 * {
     margin: 0px;
     padding: 0px;
@@ -28,19 +41,30 @@ a {
     text-decoration: none;
 }
 
-.cabecalho {
+header {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center ;
+    align-items: center;
+}
+
+#espaco {
+    height: 80px;
 }
 
 #logo {
-    font-size: 2.2em;
+    font-size: 2em;
     padding: 5px;
     margin: 10px;
-    font-family: var(--titulos); 
+    border-radius: 10px;
+    font-family: var(--titulos);
+    position: relative;
+    animation-name: logo1;
+    animation-direction: alternate;
+    animation-duration: 2s;
 }
 
 #logo:hover {
@@ -57,11 +81,17 @@ a {
 
 .menu > li > a {
     padding: 0 8px;
+    border-radius: 5px;
 }
 
-a:hover {
+.menu a:hover {
     background-color: var(--cor3);
-    border-radius: 5px;
+}
+
+#home .home a, #imagem .imagem a, #audio .audio a,
+#video .video a,#lista .lista a, #link .link a, 
+#css .css a {
+    background-color: var(--cor3);
 }
 
 main {
@@ -79,16 +109,15 @@ main {
 h1 {
     font-family: var(--subtitulos);
     color: var(--cor1);
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 10px 0px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h2 {
     font-family: var(--subtitulos);
     color: #044B4C;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 10px 0px;
-    text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h3 {
     padding: 3px 0px;
@@ -114,7 +143,7 @@ aside > h4 {
     text-align: center;
     text-decoration: none;
     color: white;
-    margin: 10px -20px;
+    margin: 20px -20px 20px;
     border-radius: 5px 5px 0px 0px;
 }
 aside > p > strong {
@@ -128,10 +157,10 @@ code {
 }
 pre {
     background-color: var(--cor4);
-    padding: 10px 3px;
+    padding: 15px 3px;
     margin: 10px 0;
-    border-radius: 10px;
-    text-align: justify;
+    border-radius: 5px;
+    text-align: center;
 }
 pre:hover {
     background-color: var(--cor1);

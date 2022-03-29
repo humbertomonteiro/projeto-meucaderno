@@ -5,16 +5,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../imagens/Iconstoc-Vintage-Social-Html-5.ico" type="image/x-icon">
         <title>Aprendendo HTML e CSS</title>
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-        <header class="cabecalho">
+        <header id="imagem">
             <a id="logo" href="../index.html">My Notebook</a>
         <ul class="menu">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="menu/imagens.html">Imagens</a></li>
+            <li class="imagem"><a href="menu/imagens.html">Imagens</a></li>
             <li><a href="audio.html">Audio</a></li>
             <li><a href="video.html">Video</a></li>
             <li><a href="listas.html">Listas</a></li>
@@ -22,11 +22,11 @@
             <li><a href="css.html">Css</a></li>
         </ul>
         </header>
+        <div id="espaco"></div>
         <main>
             <section>               
                 <h1>Imagens no HTML:</h1><hr>
                 <h2>Adicionar imagens:</h2>
-                <h3>tag IMG:</h3>
                 <p>Para colocar imagens você precisa baixar uma imagem  ou escolher alguma imagem do seu computador, e colocar
                     junto da pasta que está seu arquivo HTML (Com um nome fácil de preferência). </p>
                 <p>Feito isso é só usar a tag &lt;img&gt;  Essa tag é assim:<pre> &lt;img src="" alt=""&gt;</pre></p>
@@ -68,7 +68,7 @@
                     <strong>&lt;picture&gt;</strong> e dentro vamos usar as tags de imagem <strong>&lt;img&gt;</strong>. Usamos a tag picture para informar
                     que vai ter imagem nesse lugar do arquivo. E essa tag Também permite usar várias fontes de imagens, precisamos dessa função
                     pois precisaremos que a imagem mude de acordo com o tamanho. Nesse   exemplo, como falado, vamos usar três tamanhos. A imagem abaixo
-                    é adaptável. Pode aumentar e   diminuir seu navegador para testar.</p>
+                    é adaptável. Pode aumentar e diminuir seu navegador para testar.</p>
                 <picture>
                     <source media="(max-width: 700px)" srcset="../imagens/P.png" type="image/png">
                     <source media="(max-width: 850px)" srcset="../imagens/M.png" type="image/png">
@@ -77,13 +77,11 @@
                 <p>Olhando para o código acima podemos ver que foi usado a tag <strong>&lt;picture&gt;</strong> e em seguida a tag
                     <strong>&lt;source&gt;</strong>. Mas primeiro coloquei a tag <strong>&lt;img&gt;</strong> com a maior imagem criada 1000 x 1000.
                     Em seguida o <strong><q>visual studio code</q></strong> quando digitamos a iniciais da palavra source vão aparecer algumas
-                    opções, você irá escolher a <strong><q> source media type</q></strong>, quando selecionar essa opção, vai auto preencher da
-                    seguinte forma:</p>
-                <pre>&lt;source media="(min-width: )" srcset="" type="image/"></pre>
-                <p>Podemos observar que auto preenche com o <code><q>min-width</q></code>. Foi auterado para o máximo que é a maneira   que acho mais
+                    opções, você irá escolher a <strong><q> source media type</q></strong>, quando selecionar essa opção, vai auto preencher.</p>
+                <p>Podemos observar que auto preenche com o <code><q>min-width</q></code>. Eu auterei para o máximo que é a maneira que acho mais
                     fácil de usar: <code><q>max-width</q></code>, logo em seguida preencha o tamamho máximo permitido para que não tenha barra de
-                    rolagem na sua imagem (Nesse caso foi de 1050px). No próximo parâmetro você colocará sua imagem média. Infelizmente não consegui
-                    buscar com o <strong>ctrl espaço</strong>, mas já foi mostrado como faz para colocar imagens. E por ultimo, no parâmetro type
+                    rolagem na sua imagem (Nesse caso foi de 850px). No próximo parâmetro você colocará sua imagem média. Infelizmente não temos a opção
+                    de buscar com o <strong>ctrl espaço</strong>, mas já foi mostrado como faz para colocar imagens. E por ultimo, no parâmetro type
                     você vai colocar o tipo de imagem que foi usado.(No caso foi usado o png)</p>
                 <p>Observe que o source para troca de imagem de grande para média foi em cima da tag <strong>&lt;img&gt;</strong>. O source da imagem
                     pequena será em cima do source anterior, como demonstrado no exemplo. Será da mesma forma,   mas com o whith máximo 700px e a imagem
