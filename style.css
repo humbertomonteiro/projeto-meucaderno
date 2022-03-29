@@ -37,7 +37,7 @@ a {
 }
 
 #logo {
-    font-size: 2.5em;
+    font-size: 2.2em;
     padding: 5px;
     margin: 10px;
     font-family: var(--titulos); 
@@ -63,6 +63,7 @@ a:hover {
     background-color: var(--cor3);
     border-radius: 5px;
 }
+
 main {
     background-color: white;
     max-width: 900px;
@@ -70,17 +71,20 @@ main {
     padding: 10px;
     box-shadow: 2px 2px 6px #498e8fa1;
     margin: auto;
+    margin-bottom: 10px;
+    border-radius: 0 0 10px 10px;
+
 }
 
 h1 {
-    font-family: var(--titulos);
+    font-family: var(--subtitulos);
     color: var(--cor1);
     font-size: 2em;
     padding: 10px 0px;
     text-shadow: 1px 1px 2px rgb(87, 87, 87);
 }
 h2 {
-    font-family: var(--titulos);
+    font-family: var(--subtitulos);
     color: #044B4C;
     font-size: 1.5em;
     padding: 10px 0px;
@@ -217,15 +221,4 @@ footer {
     padding-bottom: 20px;
     padding: 20px;
     box-shadow: 2px 2px 6px var(--cor3);
-}
-footer > a {
-    color:white;
-    padding: 20px;
-    transition-duration: 0.5s;
-}
-footer a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    animation-duration: 0.5;
-}
+}   
