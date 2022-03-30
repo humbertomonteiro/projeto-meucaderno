@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+:root {
+    --cor1: #182F61;
+    --cor2: #394766;
+    --cor3: #2C54AD;
+    --cor4: #386DE0;
+    --cor4a: #7E9FE6;
+    --cor5: #e7e7e7;
+
+    --padrao: Arial, Helvetica, sans-serif;
+    --titulos:'Merienda', cursive;
+    --subtitulos: 'El Messiri', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--cor5);
+}
+
+/*cabeçalho*/
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*logo*/
+
+header > a {
+    font-family: var(--titulos);
+    font-size: 3em;
+    padding: 15px;
+}
+
+/*menu*/
+
+#menu {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+
+#menu li {
+    padding: 10px;
+}
+
+/*imagem principal*/
+
+aside {
+    background-image: url(imagens/capa.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    /*opacity: 0.7;*/
+    width: 600px;
+    height: 350px;
+}
+
+#txt {
+    color: white;
+    max-width: 600px;
+    padding-left: 200px;
+    display: flex;
+}
+
+/*caixas*/
+
+#cx {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#cx .cx {
+    background-color: #182F61;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}

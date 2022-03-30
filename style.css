@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Merienda:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 :root {
-    --cor1: #224242;
-    --cor2: #044B4C;
-    --cor3: #498E8F;
-    --cor4: #6eb3b4;
-    --cor4a: #84d2d3;
+    --cor1: #182F61;
+    --cor2: #394766;
+    --cor3: #2C54AD;
+    --cor4: #386DE0;
+    --cor4a: #7E9FE6;
     --cor5: #e7e7e7;
 
     --padrao: Arial, Helvetica, sans-serif;
     --titulos:'Merienda', cursive;
     --subtitulos: 'El Messiri', sans-serif;
-    --forte: 'Mukta', sans-serif;
 }
 
 @keyframes logo1 {
@@ -23,7 +21,6 @@
 
     } to {
         right: 0;
-        padding: 5px;
     }
 
 }
@@ -32,7 +29,7 @@
     padding: 0px;
 }
 body {
-    background: var(--cor5);
+    background: var(--cor1);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,23 +39,16 @@ a {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     display: flex;
-    position: fixed;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
 }
 
-#espaco {
-    height: 80px;
-}
-
 #logo {
     font-size: 2em;
-    padding: 5px;
-    margin: 10px;
+    margin: 7px;
     border-radius: 10px;
     font-family: var(--titulos);
     position: relative;
@@ -72,7 +62,7 @@ header {
     border-radius: 10px;
 }
 
-.menu {
+ul.menu {
     font-family: var(--subtitulos);
     display: flex;
     flex-wrap: wrap;
@@ -115,7 +105,7 @@ h1 {
 }
 h2 {
     font-family: var(--subtitulos);
-    color: #044B4C;
+    color: var(--cor1);
     font-size: 1.4em;
     padding: 10px 0px;
 }
@@ -126,7 +116,7 @@ h3 {
     font-size: 1.1em;
 }
 h4 {
-    color: var(--cor3);
+    color: var(--cor2);
     font-family: var(--subtitulos);
     font-size: 1em;
     text-decoration: underline;
@@ -136,10 +126,10 @@ aside {
     background-color: var(--cor5);
     border-radius: 5px;
     padding: 0px 20px 10px;
-    margin: 0px 10px;
+    margin: 15px;
 }
 aside > h4 {
-    background-color: var(--cor2);
+    background-color: var(--cor1);
     text-align: center;
     text-decoration: none;
     color: white;
@@ -156,16 +146,16 @@ code {
     font-size: 1.2em;
 }
 pre {
-    background-color: var(--cor4);
-    padding: 15px 3px;
-    margin: 10px 0;
+    background-color: var(--cor5);
+    padding: 10px 3px;
+    margin: 5px 0;
     border-radius: 5px;
     text-align: center;
 }
 pre:hover {
     background-color: var(--cor1);
     color: white;
-    margin: 10px -10px;
+    margin: 5px -15px;
     border-radius: 0ch;
     transition-duration: 0.5s;
 }
@@ -210,7 +200,7 @@ div.video > iframe {
     width: 90%;
     height: 90%;
 }
-ul {
+section ul {
     padding: 20px;
 }
 ol {
@@ -245,9 +235,9 @@ mark {
 footer {
     background-color: var(--cor1);
     font-family: var(--padrao);
+    font-size: 0.8em;
     color: white;
-    text-align: center;
-    padding-bottom: 20px;
-    padding: 20px;
-    box-shadow: 2px 2px 6px var(--cor3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }   
